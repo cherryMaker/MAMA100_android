@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resources>
+
+    <!-- 本机服务器（少科）IP ， 下(尹泉)IP -->
+    <!-- <string name="ip_addr">192.168.72.91</string> -->
+    <!-- <string name="sso_ip">192.168.72.100</string> -->
+
+
+    <!-- 曾立IP -->
+    <!-- <string name="ip_addr">192.168.72.80:40851</string> -->
+
+
+    <!-- 祥辉IP -->
+    <!-- <string name="ip_addr">192.168.72.73:8080</string> -->
+    <!--
+    <string name="sso_ip">192.168.75.253:8501</string> 
+    <string name="ip_addr">192.168.75.253:8521</string>
+    -->
+    <!-- 建辉IP -->
+    <!-- <string name="ip_addr">192.168.72.84:8082</string> -->
+    <!-- (尹泉)IP -->
+    <!-- <string name="ip_addr">192.168.72.100:8080</string> -->
+    <!-- 外部服务器 -->
+    <string name="ip_addr">m.mama100.com</string>
+    <string name="sso_ip">sso.mama100.com</string>
+
+    <!-- 测试服务器 -->
+    <!-- <string name="ip_addr">m.mama100.com:8332</string> -->
+    <!--
+    <string name="ip_addr">192.168.72.80:40851</string> 
+   	<string name="sso_ip">192.168.72.100</string>
+    -->
+
+
+    <!-- 253测试环境 -->
+    <!--
+    <string name="sso_ip">192.168.75.253:8501</string>
+   	<string name="ip_addr">192.168.75.253:28080</string>
+    -->
+
+</resources>

@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="10dip"
+    android:orientation="vertical"
+    android:paddingLeft="10dip"
+    android:paddingRight="10dip"
+    android:paddingTop="20dip" >
+
+    <!-- ********************************************* -->
+    <!-- ***********登录框 Start, 留待以后优化********** -->
+    <!-- ********************************************* -->
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/multiple_row_above" >
+
+        <TextView
+            android:id="@+id/register_email_account_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:paddingLeft="22dp"
+            android:paddingRight="2dp"
+            android:text="@string/register_tv_account"
+            android:textColor="#000000"
+            android:textSize="@dimen/control_font_size" />
+
+        <EditText
+            android:id="@+id/register_email_account"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left|center_vertical"
+            android:layout_marginRight="5dp"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="2"
+            android:background="@null"
+            android:hint="@string/register2"
+            android:singleLine="true"
+            android:maxLength="50"
+            android:nextFocusDown="@+id/receiver_address"
+            android:textSize="@dimen/control_font_size"
+        	android:dropDownHeight="200dp"
+        	android:dropDownVerticalOffset="5dp" >
+        </EditText>
+    </LinearLayout>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="0.1dp"
+        android:layout_marginLeft="0.8dp"
+        android:layout_marginRight="0.8dp"
+        android:background="@drawable/multiple_row_seperator" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/multiple_row_middle" >
+
+        <TextView
+            android:id="@+id/register_pwd1_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:paddingLeft="20dp"
+            android:paddingRight="2dp"
+            android:text="@string/register_tv_password"
+            android:textColor="#000000"
+            android:textSize="@dimen/control_font_size" />
+
+        <EditText
+            android:id="@+id/register_pwd1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left|center_vertical"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="2"
+            android:background="@null"
+            android:maxLength="18"
+            android:hint="@string/register3"
+            android:textSize="@dimen/control_font_size" >
+        </EditText>
+    </LinearLayout>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="0.1dp"
+        android:layout_marginLeft="0.8dp"
+        android:layout_marginRight="0.8dp"
+        android:background="@drawable/multiple_row_seperator" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/multiple_row_below" >
+
+        <TextView
+            android:id="@+id/register_pwd2_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:paddingLeft="20dp"
+            android:paddingRight="2dp"
+            android:text="@string/register_tv_password2"
+            android:textColor="#000000"
+            android:textSize="@dimen/control_font_size" />
+
+        <EditText
+            android:id="@+id/register_pwd2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left|center_vertical"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="2"
+            android:background="@null"
+            android:maxLength="18"
+            android:hint="@string/register4"
+            android:nextFocusUp="@+id/receiver_name"
+            android:textSize="@dimen/control_font_size" >
+        </EditText>
+    </LinearLayout>
+
+    <CheckBox
+        android:id="@+id/isShow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/register_pwd2"
+        android:layout_marginLeft="8dp"
+        android:button="@drawable/selector_checkbox"
+        android:paddingLeft="20dp"
+        android:text="@string/show_pwd"
+        android:textColor="@color/edittext_head_color" />
+
+    <!-- ******************************************* -->
+    <!-- ***********登录框 End, 留待以后优化********** -->
+    <!-- ******************************************* -->
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dip" >
+
+        <Button
+            android:id="@+id/submit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/selector_register_submit"
+            />
+    </LinearLayout>
+
+</LinearLayout>

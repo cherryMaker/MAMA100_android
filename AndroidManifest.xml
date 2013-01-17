@@ -1,0 +1,367 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.mama100.android.member"
+    android:versionCode="47"
+    android:versionName="1.3.6" >
+
+    <!-- 在android1.6以后的新特性，支持多屏幕机制 各属性含义： 这四个属性，是否支持大屏，是否支持中屏，是否支持小屏，是否支持多种不同密度 -->
+    <supports-screens
+        android:anyDensity="true"
+        android:largeScreens="true"
+        android:normalScreens="true"
+        android:resizeable="true"
+        android:smallScreens="false" />
+
+    <uses-feature android:name="android.hardware.camera" />
+    <uses-feature
+        android:name="android.hardware.camera.autofocus"
+        android:required="false" />
+
+    <uses-sdk
+        android:minSdkVersion="5"
+        android:targetSdkVersion="8" />
+
+    <!-- 增加调用自己service 的 权限 -->
+    <uses-permission android:name="com.mama100" />
+    <!-- 自己使用自己service的权限 -->
+    <permission android:name="com.mama100" />
+
+    <!-- Inter网权限，目的：打开网页 -->
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <!-- 网络连接状态权限，目的：获取当前GSM网络相关信息 -->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <!-- 写Sdcard的权限，目的：将服务器最新版本apk放置于本地sdcard以便升级 -->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <!-- 在SDCard中创建与删除文件权限 -->
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+
+    <!-- 读取手机状态的权限，目的：获取手机的IMEI移动设备唯一身份码等属性 -->
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <!-- 读取WIFI等属性 -->
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <!-- 申请使用摄像头的权限 -->
+    <uses-permission android:name="android.permission.CAMERA" />
+
+    <!-- 查看当前应用的任务 -->
+    <uses-permission android:name="android.permission.GET_TASKS" />
+
+    <!-- 创建应用的快捷方式 -->
+    <uses-permission android:name="com.android.launcher.permission.INSTALL_SHORTCUT" />
+    <uses-permission android:name="com.android.launcher.permission.UNINSTALL_SHORTCUT" />
+    <uses-permission android:name="com.android.launcher.permission.READ_SETTINGS" />
+
+    <!-- 拨号 -->
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+
+    <!-- ************************* -->
+    <!-- 百度统计 或 CNZZ统计 可选权限 START -->
+    <!-- ************************* -->
+
+
+    <!-- 可选的权限 -->
+    <!-- 启用错误分析功能，须添加该权限 -->
+    <uses-permission android:name="android.permission.READ_LOGS" />
+
+    <!-- 可选的权限 -->
+    <!-- 使用GPS获取用户精确定位信息 -->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+
+    <!-- ************************* -->
+    <!-- 百度统计 或 CNZZ统计 可选权限 END -->
+    <!-- ************************* -->
+
+    <application
+        android:name=".global.BasicApplication"
+        android:icon="@drawable/app_icon"
+        android:label="@string/app_name"
+        android:persistent="true"
+        android:screenOrientation="portrait"
+android:theme="@android:style/Theme.NoTitleBar" >
+
+<!--         android:theme="@style/MyNoTitleTheme" > -->
+        <!-- *************** -->
+        <!-- 系统 模块 ******* -->
+        <!-- *************** -->
+        <activity
+            android:name=".activities.SplashActivity"
+            android:configChanges="orientation|keyboard|keyboardHidden|screenLayout"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".activities.HomePageActivity"
+            android:configChanges="orientation|keyboard|keyboardHidden|screenLayout"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activities.PhotoActivity"
+            android:configChanges="orientation|keyboard|keyboardHidden|screenLayout"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activities.SwitchViewDemoActivity"
+            android:screenOrientation="portrait" />
+        <!-- <activity  android:name=".activities.CopyOfHomePageActivity"></activity> -->
+
+        <activity
+            android:name=".activities.BaseActivity"
+            android:screenOrientation="portrait" />
+
+        <!-- *************** -->
+        <!-- 用户 模块 ******* -->
+
+        <activity
+            android:name=".activities.user.RegisterActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activities.user.LoginActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activities.user.LoginCRMActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activities.user.GetPasswordActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activities.user.GetPasswordResultActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activities.user.CompleteRecevierAddressActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activities.user.EditProfileActivity"
+            android:configChanges="orientation|keyboard|keyboardHidden|screenLayout"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activities.user.AddOrModifyBabyActivity"
+            android:configChanges="orientation|keyboard|keyboardHidden|screenLayout"
+            android:screenOrientation="portrait" />
+
+        <!-- *************** -->
+        <!-- 设置 模块 ******* -->
+        <!-- *************** -->
+
+        <activity
+            android:name=".activities.setting.AccountConfigHomeActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activities.setting.AboutUsActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activities.setting.ChangePasswordActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activities.setting.FeedBackActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activities.setting.SettingHomeActivity"
+            android:screenOrientation="portrait" />
+
+        <!-- *************** -->
+        <!-- 积分 模块 ******* -->
+        <!-- *************** -->
+        <activity
+            android:name=".activities.regpoint.RegPointHistoryActivity"
+            android:screenOrientation="portrait" 
+            android:launchMode="singleTask"/>
+        <activity
+            android:name=".activities.regpoint.RegPointHomeActivity"
+            android:screenOrientation="portrait" 
+            android:launchMode="singleTask"/>
+        <activity
+            android:name=".activities.regpoint.RegPointYourselfActivity"
+            android:screenOrientation="portrait" 
+            android:launchMode="singleTask"/>
+        <activity
+            android:name=".activities.regpoint.RegPointHelpActivity"
+            android:screenOrientation="portrait"
+            android:launchMode="singleTask" /> 
+        <activity
+            android:name=".activities.regpoint.RegPointFailureActivity"
+            android:screenOrientation="portrait"
+            android:launchMode="singleTask"/>     
+        <activity
+            android:name=".activities.regpoint.RegPointFlashActivity"
+            android:screenOrientation="portrait"
+           	/>     
+        <activity
+            android:name=".activities.regpoint.RegPointInputActivity"
+            android:screenOrientation="portrait" 
+           	android:launchMode="singleTask"/>    
+        <activity
+            android:name=".activities.regpoint.RegPointProductActivity"
+            android:screenOrientation="portrait" 
+           	android:launchMode="singleTask"/>     	
+        <activity
+            android:name=".activities.regpoint.RegPointShopActivity"
+            android:screenOrientation="portrait" 
+             android:launchMode="singleTask"/>   
+        <activity
+            android:name=".activities.regpoint.ActivateECardActivity"
+            android:screenOrientation="portrait" />
+
+        <!-- *************** -->
+        <!-- 照相 模块 ******* -->
+        <!-- *************** -->
+        <activity
+            android:name=".activities.photo.TakePhotoActivity"
+            android:configChanges="orientation|keyboard|keyboardHidden|screenLayout"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activities.photo.cameracrop.CropImage"
+            android:configChanges="orientation|keyboard|keyboardHidden|screenLayout"
+            android:screenOrientation="portrait" />
+ <!-- 图片剪切 -->
+
+
+        <!-- 扫描界面 -->
+        <activity
+            android:name=".zxing.CaptureActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:exported="false"
+            android:noHistory="true"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen"
+            android:windowSoftInputMode="stateAlwaysHidden" >
+        </activity>
+
+        <!-- *************** -->
+        <!-- 消息 模块 ******* -->
+        <!-- *************** -->
+        <activity
+            android:name=".activities.message.MessageHomeActivity"
+            android:screenOrientation="portrait" />
+
+        <!-- ***** webView Activity********* -->
+        <!-- ******** 查看消息详情********** -->
+        <activity
+            android:name=".activities.WebViewActivity"
+            android:exported="false"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="android.intent.action.WebViewActivity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".activities.ThirdPartyWebViewActivity"
+            android:screenOrientation="portrait" />
+
+        <!-- *************** -->
+        <!-- 新浪微博 ******* -->
+        <!-- *************** -->
+        <activity
+            android:name=".outwardWeibo.demo.XWeiBoDemoActivity"
+            android:exported="false"
+            android:label="@string/x_demo"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <category android:name="android.intent.category.DEFAULT" />
+
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data
+                    android:host="www.AuthBackActivity.com"
+                    android:scheme="weiboandroidsdk" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".http.httpsdemo.HttpsTestActivity" >
+        </activity>
+
+        <!-- ************************************************** -->
+        <!-- ******************* 身边的母婴店 和 门店  **************************** -->
+        <!-- ************************************************** -->
+
+        <activity
+            android:name=".activities.babyshop.BabyShopActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".activities.babyshop.ShopMapActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".activities.babyshop.ShopDetailActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+
+        <!-- ************************************************** -->
+        <!-- ******************* 服务  **************************** -->
+        <!-- ************************************************** -->
+
+
+        <!-- 启动级服务，运行于系统启动，任务：在后台完成网络监测，版本升级等 -->
+        <service
+            android:name=".service.BootService"
+            android:exported="false"
+            android:permission="com.mama100" >
+            <intent-filter>
+                <action android:name="com.biostime.service.BootService" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </service>
+        <service
+            android:name=".service.BackgroundService"
+            android:exported="false"
+            android:permission="com.mama100" />
+        
+        
+        
+        <!--******************************** -->
+        <!--**********数据库************** -->
+        <!--******************************** -->
+                <!-- ContentProvider declaration for 妈妈100 -->
+        <provider
+            android:name=".db.Mama100ContentProvider"
+            android:authorities="com.mama100.android.db.Mama100ContentProvider" />
+        
+        
+        
+        
+        
+        
+        
+        
+
+        <!-- ******************************** -->
+        <!-- ********百度统计***************** -->
+        <!-- ******************************** -->
+
+
+        <!-- 您从百度网站获取的APP KEY -->
+        <meta-data
+            android:name="BaiduMobAd_STAT_ID"
+            android:value="ca0d010fe7" />
+        <!-- 渠道商编号 -->
+        <meta-data
+            android:name="BaiduMobAd_CHANNEL"
+            android:value="10000" />
+
+        <!-- 是否开启错误日志统计，默认为false -->
+        <meta-data
+            android:name="BaiduMobAd_EXCEPTION_LOG"
+            android:value="true" />
+        <!-- 日志发送策略，可选值：APP_START、ONCE_A_DAY、SET_TIME_INTERVAL，默认为APP_START -->
+        <meta-data
+            android:name="BaiduMobAd_SEND_STRATEGY"
+            android:value="APP_START" />
+        <!-- 日志发送策略 为SET_TIME_INTERVAL时，需设定时间间隔(取消下行注释)。取值为1-24的整数，默认为1 -->
+        <!-- <meta-data android:name="BaiduMobAd_TIME_INTERVAL" android:value="2" /> -->
+        <!-- 日志仅在wifi网络下发送，默认为false -->
+        <meta-data
+            android:name="BaiduMobAd_ONLY_WIFI"
+            android:value="false" />
+    </application>
+
+</manifest>

@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bg_wall" android:orientation="vertical">
+
+<com.mama100.android.member.widget.scrollview.ScrViewEventToChild
+    android:id="@+id/scrV_main"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" android:layout_marginTop="41dp">
+
+<LinearLayout
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >                  
+
+ <com.mama100.android.member.widget.MapViewEx
+     android:id="@+id/mapV_map"
+     android:layout_width="fill_parent"
+     android:layout_height="wrap_content"
+     android:layout_marginLeft="1dp"
+     android:layout_marginRight="1dp"
+     android:layout_marginTop="1dp"
+     android:clickable="true" />
+
+ <ImageView
+     android:id="@+id/imageView1"
+     android:layout_width="fill_parent"
+     android:layout_height="wrap_content" android:background="@drawable/map_bottom"/>
+ 
+<LinearLayout
+    android:id="@+id/layout_main"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center_horizontal"
+    android:layout_marginLeft="4dp"
+    android:layout_marginRight="4dp"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="12dp"
+        android:ellipsize="end"
+        android:singleLine="true"
+        android:src="@drawable/bt_calendar_on"
+        android:text="爱婴岛店(test)"
+        android:textColor="@color/mama100Orange2" android:layout_marginTop="20dp" android:textSize="17sp"/>
+
+    <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:orientation="vertical" android:layout_marginRight="4dp" android:layout_marginTop="10dp">
+
+            <TextView
+                android:id="@+id/tv_addr_tip"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="地址：" android:layout_marginLeft="12dp" android:layout_marginTop="6dp" android:textColor="#9f9f9f" android:textSize="15sp"/>
+
+            <TextView
+                android:id="@+id/tv_address"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/tv_addr_tip"
+                android:text="广州市天河区珠江新城广州国际金融中心(友谊商店二层)" android:ellipsize="end" android:layout_alignTop="@id/tv_addr_tip" android:textColor="#4d4d4d" android:lines="2" android:layout_marginRight="4dp" android:textSize="15sp"/>
+
+
+            <TextView
+                android:id="@+id/tv_phonenum"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="020-84340182"
+                android:textColor="#4d4d4d" android:layout_alignTop="@+id/imgV_call" android:layout_alignBottom="@id/imgV_call" android:gravity="center" android:layout_toLeftOf="@id/imgV_call" android:layout_marginRight="3dp" android:textSize="16sp"/>
+
+            <ImageView
+                android:id="@+id/imgV_call"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/call_shop" android:layout_below="@id/tv_address" android:layout_alignParentRight="true" android:layout_marginRight="10dp" android:layout_marginTop="6dp"/>
+
+        </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/ImageView01"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp" android:background="@drawable/shop_list_line"/>
+
+    <TextView
+        android:id="@+id/tv_orders"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="12dp"
+        android:layout_marginTop="16dp"
+        android:text="我最近的订单"
+        android:textColor="#9f9f9f"
+        android:textSize="13sp" android:visibility="gone"/>
+
+    <LinearLayout
+        android:id="@+id/layout_orders"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" android:layout_marginTop="6dp" android:layout_marginLeft="12dp" android:layout_marginRight="10dp">
+
+       <!--<include
+            android:id="@+id/order_item"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="6dp"
+            android:layout_marginTop="4dp"
+            
+            layout="@layout/order_history_item" />  --> 
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_shop_inf_tip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="12dp"
+        android:layout_marginTop="8dp"
+        android:text="门店简介"
+        android:textColor="#9f9f9f"
+        android:textSize="13sp" android:visibility="gone"/>
+
+    <TextView
+        android:id="@+id/tv_shop_inf"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="12dp"
+        android:layout_marginRight="7dp"
+        android:textColor="#4d4d4d" android:layout_marginTop="8dp" android:text="这是门店简介" android:textSize="13sp" android:visibility="gone" android:layout_marginBottom="64dp"/>
+
+</LinearLayout>
+</LinearLayout>
+</com.mama100.android.member.widget.scrollview.ScrViewEventToChild>
+
+<include
+    android:id="@id/menutop"
+    layout="@layout/shop_menu_top" />
+
+</RelativeLayout>

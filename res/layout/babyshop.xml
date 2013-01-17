@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/imgV_shoptab_line"
+        android:layout_alignLeft="@+id/imgV_shoptab_line"
+        android:layout_alignRight="@id/imgV_shoptab_line"
+        android:layout_centerHorizontal="true"
+        android:orientation="horizontal" >
+
+        <RelativeLayout
+            android:id="@+id/btn_near"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:padding="12dp" >
+
+            <TextView
+                android:id="@+id/tv_tab_left"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:drawableLeft="@drawable/shop_tab_near_on"
+                android:text="附近的"
+                android:textColor="#4d4d4d"
+                android:textSize="17sp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/btn_concerned"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:padding="12dp" >
+
+            <TextView
+                android:id="@+id/tv_tab_right"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:drawableLeft="@drawable/shop_tab_concerned"
+                android:text="关注的"
+                android:textSize="17sp" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/imgV_shoptab_line"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/shop_tab_left" />
+
+    <RelativeLayout
+        android:id="@+id/layout_near"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/imgV_shoptab_line"
+        android:layout_alignRight="@id/imgV_shoptab_line"
+        android:layout_below="@id/imgV_shoptab_line"
+        android:orientation="vertical" >
+
+        <ProgressBar
+            android:id="@+id/progressBar1"
+            style="?android:attr/progressBarStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="90dp"
+            android:indeterminateDrawable="@anim/cycle_loading_anim"
+            android:minHeight="32dp"
+            android:minWidth="32dp" />
+
+        <ListView
+            android:id="@+id/list_shops"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:cacheColorHint="#00000000"
+            android:divider="#00000000"
+            android:dividerHeight="12dp"
+            android:fadingEdge="none"
+            android:footerDividersEnabled="false"
+            android:headerDividersEnabled="false"
+            android:listSelector="#00000000"
+            android:scrollingCache="false" >
+        </ListView>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/layout_concerned"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/imgV_shoptab_line"
+        android:orientation="vertical"
+        android:visibility="gone" >
+
+        <ProgressBar
+            android:id="@+id/proBar_2"
+            style="?android:attr/progressBarStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="90dp"
+            android:indeterminateDrawable="@anim/cycle_loading_anim"
+            android:minHeight="32dp"
+            android:minWidth="32dp" />
+
+        <com.mama100.android.member.widget.scrollview.ScrViewEventToChild
+            android:id="@+id/scrV_main"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent" >
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <com.mama100.android.member.widget.scrollview.HorizontalPager
+                    android:id="@+id/home_act_pager"
+                    android:layout_width="wrap_content"
+                    android:layout_height="404dp" >
+                </com.mama100.android.member.widget.scrollview.HorizontalPager>
+            </LinearLayout>
+        </com.mama100.android.member.widget.scrollview.ScrViewEventToChild>
+
+        <!-- 圆点滚动栏 -->
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/home_act_idx_container"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="16dp"
+        android:orientation="horizontal"
+        android:paddingBottom="16dp"
+        android:visibility="gone" >
+    </LinearLayout>
+
+</RelativeLayout>

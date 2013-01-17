@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:paddingLeft="16dp" android:paddingRight="16dp" xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <EditText
+        android:id="@+id/edt_feedback"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="26dp"
+        android:background="@drawable/edittext_selector"
+        android:gravity="top|left"
+        android:maxLength="200"
+        android:hint="@string/feed_back_tip"
+        android:minLines="7" android:textColorHint="@color/edittext_hint_color" android:textSize="16dp"/>
+
+    <TextView
+        android:layout_below="@id/edt_feedback"
+        android:id="@+id/tv_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="18dp" android:layout_marginTop="46dp" android:textColor="@color/mama100Orange" android:text="@string/thanks_feed_back" android:visibility="gone"/>
+
+    <TextView
+        android:id="@+id/tv_tips2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@id/tv_title"
+        android:text="@string/response_feed_back_tip"
+        android:textColor="@color/black"
+        android:textSize="18dp" android:layout_marginTop="28dp" android:visibility="gone"/>
+
+</RelativeLayout>

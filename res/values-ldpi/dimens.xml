@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    
+    
+    <!-- homePage  适用 480*320等-->
+    <!-- 480/854*Xdip  X指在800*480设备上的值-->
+    <dimen name="home_act_pager_hei">340dp</dimen>
+    <dimen name="idx_container_hei">200dip</dimen>
+    
+
+    <dimen name="hollow_frame">72dip</dimen>
+    <dimen name="homepage_avatar">57dip</dimen>
+    
+    
+        <!--share_home -->
+    <dimen name="photo_size">293dip</dimen>
+    <dimen name="photo_hollow_size">300dip</dimen>
+    
+        <!--card_home -->
+    <dimen name="reg_card_width">298dip</dimen>
+    <dimen name="reg_card_height">196dip</dimen>
+</resources>

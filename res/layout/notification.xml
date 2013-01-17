@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent" android:layout_height="100dip"
+	android:orientation="vertical">
+
+	<TextView android:id="@+id/notification_title" android:text="title"
+		android:layout_marginLeft="10dip" style="@style/tabcontentField"
+		android:textStyle="bold" android:textSize="18dip" android:textColor="#333333"
+		android:layout_width="fill_parent" android:layout_height="wrap_content" />
+
+	<ProgressBar android:id="@+id/ProgressBar01"
+		android:layout_marginLeft="10dip" android:layout_below="@+id/notification_title"
+		android:layout_width="300dp" android:layout_height="25dp"
+		style="?android:attr/progressBarStyleHorizontal"
+		android:layout_centerInParent="true"
+		android:progressDrawable="@drawable/progress_bar">
+	</ProgressBar>
+	
+	<!--
+		
+		android:max="100"
+		android:layout_alignWithParentIfMissing="true" android:indeterminate="false"
+		android:indeterminateOnly="true" android:scrollbarStyle="outsideOverlay"
+		android:keepScreenOn="true">
+
+	-->
+	
+	<LinearLayout android:id="@+id/value_bar"
+		android:layout_marginLeft="10dip" android:layout_below="@+id/ProgressBar01"
+		android:orientation="horizontal" android:layout_width="fill_parent"
+		android:layout_height="wrap_content">
+		<TextView android:text="label" android:id="@+id/notification_label"
+			android:textColor="#333333" android:layout_width="wrap_content"
+			android:ellipsize="marquee" android:layout_height="wrap_content" />
+		<TextView android:text="value" android:id="@+id/notification_value"
+			android:textColor="@color/red" android:layout_width="wrap_content"
+			android:layout_height="wrap_content" />
+	</LinearLayout>
+
+
+</RelativeLayout>   

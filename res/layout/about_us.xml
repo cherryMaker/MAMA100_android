@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+
+        
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:paddingLeft="24dp"
+        android:paddingRight="24dp" >
+
+        <ImageView
+            android:id="@+id/imgV_img"
+            android:background="@drawable/aboutus_logo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="90dp"
+             />
+
+
+        <TextView
+            android:id="@+id/tv_version"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/imgV_img"
+            android:layout_centerHorizontal="true"
+            android:text=""
+            android:textColor="@color/edittext_head_color"
+            android:textSize="16dp" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/layout_followus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/tv_copyright"
+        android:layout_marginBottom="48dp"
+        android:clickable="true"
+        android:focusable="true"
+        android:orientation="horizontal" android:layout_centerHorizontal="true">
+
+        <ImageView
+            android:id="@+id/imgV_sinalogo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:background="@drawable/weibo_logo_sina"
+            />
+
+        <TextView
+            android:id="@+id/tv_followus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:text="@string/follow_mama100_X"
+            android:textColor="@color/black"
+            android:textSize="16dp" />
+
+        <CheckBox
+            android:id="@+id/cbox_isfollow"
+            android:layout_width="20dp"
+            android:layout_height="wrap_content"
+            android:button="@drawable/selector_followus_chbox"
+            android:clickable="false"
+            android:layout_marginLeft="2dp"/>
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:layout_above="@+id/tv_copyright"
+        android:layout_alignParentLeft="true"
+        android:layout_marginBottom="32dp"
+        android:background="@drawable/horizontal_seperator" />
+
+        <TextView
+        android:id="@+id/tv_copyright"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="48dp"
+        android:gravity="center"
+        android:hint="@string/gl_about_copyright"
+        android:textSize="12dp" />
+        
+    <TextView
+        android:id="@+id/tv_copyright2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="32dp"
+        android:gravity="center"
+        android:hint="@string/gl_about_copyright2"
+        android:textSize="12dp" android:layout_centerHorizontal="true"/>
+
+</RelativeLayout>

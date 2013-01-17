@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+     <ViewAnimator  xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/view_animator"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/commit_button_margin_top" >
+
+        <LinearLayout
+            android:id="@+id/v0"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical"
+            android:padding="2dip" >
+
+            <include
+                android:layout_gravity="center_horizontal"
+                layout="@layout/input_cell_phone_fragment" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/v1"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical"
+            android:padding="2dip" >
+
+             <include
+                android:layout_gravity="center_horizontal"
+                layout="@layout/input_verify_code_fragment" />
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/v2"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical"
+            android:padding="2dip" >
+
+             <include
+                android:layout_gravity="center_horizontal"
+                layout="@layout/input_new_pwd_fragment" />
+        </LinearLayout>
+    </ViewAnimator>

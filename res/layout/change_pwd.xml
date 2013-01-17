@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="10dip"
+    android:orientation="vertical"
+    android:paddingLeft="10dip"
+    android:paddingRight="10dip"
+    android:paddingTop="20dip" >
+
+    <!-- ********************************************* -->
+    <!-- ***********登录框 Start, 留待以后优化********** -->
+    <!-- ********************************************* -->
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/multiple_row_above" >
+
+        <TextView
+            android:id="@+id/edt_old_pwd_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:paddingLeft="22dp"
+            android:paddingRight="2dp"
+            android:text="@string/old_pwd"
+            android:textColor="#000000"
+            android:textSize="@dimen/control_font_size" />
+
+        <EditText
+            android:id="@+id/edt_old_pwd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left|center_vertical"
+            android:layout_marginRight="10dp"
+            android:layout_weight="2"
+            android:background="@null"
+            android:maxLength="18"
+            android:hint="@string/input_pwd_hint"
+            android:nextFocusDown="@+id/receiver_address"
+            android:textSize="@dimen/control_font_size" >
+        </EditText>
+    </LinearLayout>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="0.1dp"
+        android:layout_marginLeft="0.8dp"
+        android:layout_marginRight="0.8dp"
+        android:background="@drawable/multiple_row_seperator" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/multiple_row_middle" >
+
+        <TextView
+            android:id="@+id/edt_new_pwd_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:paddingLeft="20dp"
+            android:paddingRight="2dp"
+            android:text="@string/new_pwd"
+            android:textColor="#000000"
+            android:textSize="@dimen/control_font_size" />
+
+        <EditText
+            android:id="@+id/edt_new_pwd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left|center_vertical"
+            android:layout_marginRight="10dp"
+            android:layout_weight="2"
+            android:background="@null"
+            android:maxLength="18"
+            android:hint="@string/input_pwd_hint"
+            android:textSize="@dimen/control_font_size" 
+            >
+        </EditText>
+    </LinearLayout>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="0.1dp"
+        android:layout_marginLeft="0.8dp"
+        android:layout_marginRight="0.8dp"
+        android:background="@drawable/multiple_row_seperator" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/multiple_row_below" >
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:paddingLeft="20dp"
+            android:paddingRight="2dp"
+            android:text="@string/new_pwd2"
+            android:textColor="#000000"
+            android:textSize="@dimen/control_font_size" />
+
+        <EditText
+           	android:id="@+id/edt_new_pwd2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left|center_vertical"
+            android:layout_marginRight="10dp"
+            android:layout_weight="2"
+            android:background="@null"
+            android:maxLength="18"
+            android:hint="@string/input_pwd_hint"
+            android:nextFocusUp="@+id/receiver_name"
+            android:textSize="@dimen/control_font_size" >
+        </EditText>
+    </LinearLayout>
+
+    
+     <CheckBox
+        android:id="@+id/cBox_showpwd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="24dp"
+        android:paddingLeft="20dp"
+        android:button="@drawable/selector_checkbox"
+        android:text="@string/show_pwd"
+        android:textColor="@color/edittext_head_color" />
+    
+    <!-- ******************************************* -->
+    <!-- ***********登录框 End, 留待以后优化********** -->
+    <!-- ******************************************* -->
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dip" >
+
+        <Button
+            android:id="@+id/submit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/selector_register_submit"
+            />
+    </LinearLayout>
+
+</LinearLayout>

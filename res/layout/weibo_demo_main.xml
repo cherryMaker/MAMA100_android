@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+
+    <TextView
+        android:id="@+id/tv_inf"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="TextView" />
+
+
+    <Button
+        android:id="@+id/btn_share"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:text="分享"/>
+    
+        <Button
+        android:id="@+id/btn_view"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:text="查看我的微博"/>
+
+
+
+        <Button
+            android:id="@+id/btn_followus"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:text="关注妈妈100微博" />
+
+
+        <Button
+            android:id="@+id/btn_dialogauth"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/demo_dialog_auth" android:visibility="invisible"/>
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/demo_select" />
+
+        <Button
+            android:id="@+id/btn_webauth"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" android:text="@string/demo_webview_auth"/>
+
+</LinearLayout>

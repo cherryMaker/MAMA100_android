@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:editTextEx="http://schemas.android.com/apk/res/com.mama100.android.member"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:paddingLeft="10dip"
+    android:paddingRight="10dip"
+    android:paddingTop="20dip" >
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/lookfor_pwd_warning1"
+        android:textColor="@color/black"
+        android:textSize="@dimen/control_font_size" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dip"
+        android:orientation="vertical" >
+
+        <com.mama100.android.member.widget.EditTextEx
+            android:id="@+id/input"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            editTextEx:hint_text="@string/lookfor_pwd_phone1_hint"
+            editTextEx:tip_text="@string/lookfor_pwd_phone1"
+            editTextEx:max_length="11"
+            android:gravity="center_horizontal" />
+
+        <Button
+            android:id="@+id/send_wait"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dip"
+            android:layout_gravity="center"
+            android:background="@drawable/bt_getpwd_wait"
+            android:text=""
+            android:visibility="gone"
+            android:textColor="#001111"
+            android:paddingLeft="55dip"
+            android:gravity="center_vertical" />
+        <Button
+            android:id="@+id/send"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dip"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/selector_getpwd"
+            android:gravity="center_vertical" 
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/vcode_bar"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dip"
+        android:orientation="vertical"
+        android:visibility="visible" >
+
+        <com.mama100.android.member.widget.EditTextEx
+            android:id="@+id/vcode"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            editTextEx:hint_text="@string/lookfor_pwd_phone2_hint"
+            editTextEx:tip_text="@string/lookfor_pwd_phone2"
+            editTextEx:max_length="8"
+            android:gravity="center_horizontal" />
+
+        <Button
+            android:id="@+id/send_vcode"
+            android:layout_width="wrap_content"
+            android:layout_marginTop="20dip"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/selector_getpwd_submit"
+            android:gravity="center_horizontal" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/error_warning"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="20dip"
+        android:text=""
+        android:textColor="@color/black"
+        android:textSize="@dimen/control_font_size" />
+
+</LinearLayout>

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content" android:paddingRight="18dp">
+
+    <RelativeLayout
+        android:id="@+id/layout_popwindow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="24dp"
+        android:background="@drawable/map_popup_bg" >
+
+        <TextView
+            android:id="@+id/tv_poptip"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:gravity="center"
+            android:layout_centerVertical="true" android:paddingBottom="1dp" android:textColor="@color/black" android:textSize="13sp"/>
+
+        <ImageView
+            android:id="@+id/imageView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="4dp"
+            android:layout_toRightOf="@id/tv_poptip"
+            android:background="@drawable/rightarrow2" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/tv_hide"
+        android:layout_height="2dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@+id/layout_popwindow" android:layout_width="wrap_content" android:visibility="invisible"/>
+
+</RelativeLayout>  

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<color name="red">#ff0000</color>
+	<color name="green">#ff00ff</color>
+	<color name="lightgray">#c0c0c0ff</color>
+	<color name="blue">#ffff00</color>
+	<color name="gray">#808080ff</color>
+	<color name="iphoneBg">#ccd1d9</color>
+	<color name="listCacheColor">#00000000</color>
+	<color name="tabColor_active">#333333</color>
+	<color name="tabColor_normal">#999999</color>
+	<color name="date_highlight">#09C7F7</color>
+	<color name="transparent">#00000000</color>
+	<color name="mama100Orange">#F15A24</color>
+	<color name="mama100Orange2">#ff6600</color>
+	<color name="mama100Blue">#29ABE2</color>
+	
+	<!-- dialog 案例 -->	
+    <color name="red_tint">#88FF0000</color>   
+    <color name="blue_tint">#880000FF</color>   
+    <color name="yellow_tint">#88FFFF00</color>   
+    <color name="purple_tint">#88995f86</color>   
+    <color name="orange_tint">#aaffbf00</color>   
+    <color name="magenta_tint">#88ff33cc</color>   
+    
+    
+    	<color name="white">#FFFFFF</color>
+	<color name="darkgray">#938192</color>
+	<color name="lightgreen">#7cd12e</color>
+	<color name="black">#000000</color>
+	
+	<color name="product_board_color">#bab5ae</color>
+	<color name="record_footer_txt_color">#f7646b</color>
+	
+	
+	<color name="menu_table_1">#ffcccc</color>
+	<color name="menu_table_2">#ffff99</color>
+	<color name="menu_table_3">#ccccff</color>
+	<color name="mkt_textview_color">#125A95</color>
+	
+	<!-- 表格 -->
+	<color name="mkt_listview_title_bg">#1893D9</color>
+	<color name="mkt_listview_divider_bg">#125a95</color>
+	<color name="light_blue_color">#ccecff</color>
+	
+	
+	<color name="transparent_color1">#50223344</color>
+	
+	
+	
+	
+	
+	
+</resources>

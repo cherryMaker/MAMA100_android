@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:editTextEx="http://schemas.android.com/apk/res/com.mama100.android.member"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/regpoint_bg"
+        android:gravity="center_vertical"
+        android:text="@string/regpoint_3"
+        android:textColor="@color/black"
+        android:textSize="16sp" />
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+
+        <com.mama100.android.member.widget.EditTextEx
+            android:id="@+id/reg_series"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            editTextEx:hint_text="@string/regpoint_hint1"
+            editTextEx:max_length="14"
+            editTextEx:tip_text="@string/regpoint_label1" />
+
+        <ImageView
+            android:id="@+id/scanner1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignRight="@id/reg_series"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="5dp"
+            android:src="@drawable/scanner_icon" />
+    </RelativeLayout>
+
+    <RelativeLayout
+            android:layout_marginTop="20dip"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+
+        <com.mama100.android.member.widget.EditTextEx
+            android:id="@+id/reg_code"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            editTextEx:hint_text="@string/regpoint_hint2"
+            editTextEx:max_length="16"
+            editTextEx:tip_text="@string/regpoint_label2" />
+
+        <ImageView
+            android:id="@+id/scanner2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignRight="@id/reg_code"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="5dp"
+            android:src="@drawable/scanner_icon" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="@string/regpoint_label5" />
+
+        <ImageButton
+            android:id="@+id/where_to_find"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@id/textView4"
+            android:background="@drawable/selector_questionmark" />
+    </RelativeLayout>
+
+</LinearLayout>

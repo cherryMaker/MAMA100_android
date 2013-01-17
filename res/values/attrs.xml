@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="com.mama100.android.member.ui.HorizontalPager">
+        <attr name="pageWidth" format="dimension" />
+    </declare-styleable>
+
+    <declare-styleable name="com.mama100.android.member.ui.PagerControl">
+        <attr name="barColor"        format="color" />
+        <attr name="highlightColor"  format="color" />
+        <attr name="fadeDelay"       format="integer" />
+        <attr name="fadeDuration"    format="integer" />
+        <attr name="roundRectRadius" format="dimension" />
+    </declare-styleable>
+    
+    
+   <declare-styleable name="EditTextEx">
+        <attr name="tip_text"        format="string" />
+        <attr name="hint_text"  format="string" />
+        <attr name="right_drawable"       format="integer" />
+        <attr name="max_length"    format="integer" />
+    </declare-styleable>
+    
+   <declare-styleable name="EditTextExt">
+        <attr name="label"        format="string" />
+    </declare-styleable>
+    
+    
+    
+</resources>

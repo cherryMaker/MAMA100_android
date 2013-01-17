@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/above"
+  	android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/selector_msg_item"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="30dp" >
+        <ImageView
+            android:id="@+id/msg_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"
+            android:paddingTop="12dp"
+            android:src="@drawable/msg_icon_unread" />
+
+        <TextView
+            android:id="@+id/regdate2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/msg_icon"
+            android:layout_alignParentRight="true"
+            android:text="555555"
+            android:textColor="@color/edittext_head_color"
+            android:textSize="8sp"
+            android:visibility="invisible" />
+
+        <TextView
+            android:id="@+id/msg_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="3dp"
+            android:layout_marginRight="89dp"
+            android:layout_toRightOf="@+id/msg_icon"
+            android:ellipsize="end"
+            android:paddingTop="12dp"
+            android:singleLine="true"
+            android:textColor="@color/black"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/msg_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/msg_icon"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="6dp"
+            android:text="2012-09-06 12:26"
+            android:textColor="@color/edittext_head_color"
+            android:textSize="8sp" />
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/dashline"
+        android:layout_width="fill_parent"
+        android:layout_height="0.3dp"
+        android:layout_marginTop="4dp"
+        android:background="@drawable/msg_dashline" >
+    </ImageView>
+
+    <RelativeLayout
+        android:id="@+id/below"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:minHeight="30dp" >
+
+        <ImageView
+            android:id="@+id/right_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="6dp"
+            android:src="@drawable/selector_rightarrow" />
+
+        <TextView
+            android:id="@+id/msg_content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="26dp"
+            android:layout_marginRight="42dp"
+            android:ellipsize="end"
+            android:lineSpacingExtra="3sp"
+            android:maxLines="2"
+            android:textColor="@color/edittext_head_color"
+            android:textSize="12sp" />
+    </RelativeLayout>
+
+</LinearLayout>

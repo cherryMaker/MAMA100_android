@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content" >
+
+    <com.mama100.android.member.widget.HideLinearLayout
+    android:id="@+id/background"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    >
+    
+<LinearLayout
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/above"
+        android:layout_width="fill_parent"
+        android:layout_height="160dp"
+        android:layout_marginTop="8dp" android:background="@drawable/share_topbg" android:paddingLeft="4dp" android:paddingRight="10dp">
+          <RelativeLayout 
+        android:id="@+id/combine_avatar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        >
+    <ImageView
+        android:id="@+id/photo_avatar"
+        android:layout_width="59dp"
+        android:layout_centerInParent="true"
+        android:src="@drawable/default_avatar"
+        android:clickable="true" android:focusable="true" android:focusableInTouchMode="true" android:layout_height="59dp"/>
+    
+    <ImageView
+        android:id="@+id/hollow_frame"
+        android:layout_width="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_height="wrap_content"
+        android:scaleType="centerCrop"
+        android:background="@drawable/homepage_avatar_hollow"/>
+
+    </RelativeLayout>
+        
+        
+        
+        
+        
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="" />
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" >
+
+                <EditText
+                    android:id="@+id/content"
+                    android:layout_width="fill_parent"
+                    android:layout_height="110dp"
+                    android:background="@drawable/weibo_text_bg2"
+                    android:gravity="top|left"
+                    android:lineSpacingExtra="1dp"
+                    android:paddingBottom="20sp"
+                    android:paddingLeft="10sp"
+                    android:paddingRight="10sp"
+                    android:paddingTop="10sp"
+                    android:textSize="13sp" android:scrollbarAlwaysDrawVerticalTrack="true" android:scrollbars="vertical"/>
+
+                <TextView
+                    android:id="@+id/tv_count"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="12/140" android:layout_alignRight="@id/content" android:layout_alignBottom="@id/content" android:layout_marginRight="8dp"
+                    android:layout_marginBottom="5dp" android:textSize="11sp" android:textColor="@color/edittext_hint_color"/>
+
+            </RelativeLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+
+        <RelativeLayout
+        android:id="@+id/photo_bar"
+        android:layout_marginTop="4dp"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" android:paddingLeft="10dp" android:paddingRight="10dp">
+
+            <ImageView
+                android:id="@+id/photo"
+                android:layout_width="@dimen/photo_size"
+                android:layout_height="@dimen/photo_size" android:layout_centerInParent="true"/>
+            
+            <ImageView
+                android:id="@+id/photo_hollow"
+                android:layout_width="@dimen/photo_hollow_size"
+                android:layout_height="@dimen/photo_hollow_size" android:background="@drawable/photo_hollow_small" android:layout_centerInParent="true"/>
+
+            <ImageButton
+                android:id="@+id/btn_take_photo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/selector_takepicture" android:layout_alignBottom="@id/photo" android:layout_marginBottom="1dp" android:layout_marginLeft="6dp"/>
+
+            <ProgressBar
+                android:id="@+id/proBar_updating"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="64dp" android:visibility="gone"/>
+
+        </RelativeLayout>
+
+</LinearLayout>
+
+</com.mama100.android.member.widget.HideLinearLayout>
+</ScrollView>

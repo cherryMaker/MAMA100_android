@@ -1,0 +1,548 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resources>
+
+    <string name="app_name">妈妈100</string>
+    
+    
+    <string name="confirm">确定</string>
+    <string name="modify">修改</string>
+    <string name="mama100_dir">mama100</string>
+    <string name="apk_name">mama100_bbt</string>
+    <string name="doing_req_message">正在处理，请稍候&#8230;</string>
+    <string name="doing_req_message2">正在登录，请稍候&#8230;</string>
+    <string name="doing_req_message3">正在获取用户信息，请稍候&#8230;</string>
+    <!-- Main Act -->
+    <string name="main_act_tv_friendly_tips">温馨提示</string>
+    <string name="main_act_tv_exit_tips">您确定要退出吗?</string>
+    <string name="main_act_tv_exit_tips2">您确定要退出自助积分吗?</string>
+    <string name="main_act_tv_confirm">确定</string>
+    <string name="main_act_tv_cancel">取消</string>
+
+    <!-- Login Act -->
+    <string name="account_login_input_name_hint">用户名或手机号码</string>
+    <string name="account_login_input_pwd_hint">请输入密码</string>
+    <string name="account_login_message_login_rule">密码必须在6–20个字符之间.</string>
+    <string name="account_login_message_warn">帐号格式不正确.</string>
+    <string name="account_login_tv_title">用户登录</string>
+    <string name="glb_message_log_now">正在登录,请稍后…</string>
+    <string name="login_tv_title">登录</string>
+    <string name="login_tv_login_pwd">登录密码</string>
+    <string name="login_tv_account">帐号</string>
+    <string name="login_tv_account2">帐号:</string>
+    <string name="login_tv_password">密码</string>
+    <string name="login_tv_password2">密码:</string>
+    <string name="login_tv_account_hint">手机号码或会员帐号</string>
+    <string name="login_tv_remmember_me">记住我</string>
+    <string name="login_tv_forget_pwd">忘记密码</string>
+    <string name="login_tv_lookfor_pwd"><u>忘记密码</u></string>
+    <string name="login_tv_lookfor_pwd2">找回密码</string>
+    <string name="login_tv_show_pwd">要显示密码字符</string>
+    <string name="login_dialog_choose_name">选择你的用户名</string>
+    <string name="login_dialog_no_history">没有历史用户记录</string>
+    <string name="type_dialog_choose_type">选择品项</string>
+    <string name="type_dialog_no_type">没有品项记录</string>
+    <string name="login_et_object_null">输入框对象为空</string>
+    <string name="login_et_value_null">输入值不能为空</string>
+    <string name="login_et_user_value_length_error">帐号输入不正确，应该为%1$s-%2$s位%3$s</string>
+    <string name="login_et_pwd_value_length_error">密码输入不正确，应该为%1$s-%2$s位%3$s</string>
+
+    <!-- NetWork Strings Start -->
+    <string name="local_service_disconnected">服务断联！</string>
+    <string name="local_service_connected">服务联上！</string>
+    <string name="hint_open_cmnet">您需要在移动网络设置中打开CMNET接入点才可正常使用.</string>
+    <string name="hint_open_con">您的网络好像有点不给力，请重试！</string>
+    <!-- NetWork Strings End -->
+
+
+    <!-- DownLoad /Update the app Start -->
+
+    <string name="app_downloading_toast_boost">正在下载妈妈100最新手机版，请查看通知栏！</string>
+    <string name="app_downloading_toast_failed">下载失败，不能连接服务器!</string>
+    <string name="app_download_ongoing">下载进度…</string>
+    <string name="app_download_success">下载成功,点击安装妈妈100手机版软件</string>
+    <string name="app_download_failed">下载失败,不能连接服务器</string>
+    <string name="app_download_success_tip">妈妈100手机版下载成功</string>
+    <string name="app">软件</string>
+    <string name="app_update_notification">软件升级通知</string>
+    <string name="confirm_update">"马上升级"</string>
+    <string name="app_download_start">正在下载妈妈100最新手机版</string>
+    <string name="app_download_start_tip">正在从服务器下载</string>
+    <string name="app_install_tip">妈妈100已发布新的版本，需要现在升级吗？</string>
+    <string name="connect_timeout_error">软件更新失败,请检查您的手机网络</string>
+    <string name="socket_timeout_error">软件更新失败,请确定网络正常后重试</string>
+    <string name="server_404_error">服务器地址不存在,请稍后重试</string>
+    <string name="validate_error">下载更新失败,URL不正确</string>
+    <string name="system_exception">软件更新失败,请稍后重试</string>
+    <string name="unavailable_network">您的网络好像有点不给力，请重试！</string>
+    <string name="app_download_wait_tip">后台已经在下载新版本,请稍等…</string>
+
+    <!-- DownLoad /Update the app End -->
+
+
+    <!-- Btn Name Collection -->
+    <string name="btn_login">登____录</string>
+    <string name="btn_fast_reg">快速注册</string>
+    <string name="btn_first_login">首次登录</string>
+    <string name="btn_back">返回</string>
+    <string name="btn_check">查看</string>
+    <string name="btn_share">分享</string>
+    <string name="btn_submit">提交</string>
+    <string name="btn_save">保存</string>
+    <string name="btn_confirm">确认</string>
+    <string name="btn_get_vcode">获取验证码</string>
+    <string name="btn_cancel">取消</string>
+    <string name="submit">提交</string>
+    <string name="upload">上 传</string>
+    <string name="version">版本%s</string>
+    <string name="alert">消息提醒</string>
+    <string name="opened">已经打开</string>
+    <string name="exit">退出</string>
+    <string name="cancel">取消</string>
+    <string name="back">返回</string>
+    <string name="save">保存</string>
+    <string name="tab_reserve1">预留</string>
+    <string name="tab_reserve2">预留2</string>
+
+    <!-- glb message -->
+
+    <string name="glb_message_login_log">正在自动登录,请稍后…</string>
+    <string name="glb_message_sign_log">正在签到,请稍后…</string>
+    <string name="glb_message_auto_loading">正在读取数据,请稍后…</string>
+    <string name="glb_message_auto_loading2">加载中,请稍后…</string>
+    <string name="glb_message_auto_deleting">正在删除,请稍后…</string>
+    <string name="glb_message_auto_editing">正在编辑,请稍后…</string>
+    <string name="glb_message_auto_summitting_data">正在提交数据,请稍后…</string>
+    <string name="glb_message_lastitem">已是最后一条</string>
+    <string name="glb_message_noitem">没有查询到任何数据</string>
+    <string name="glb_message_page_tip">页</string>
+    <string name="current_date"> %1$s  年   %2$s  月  %3$s  日 </string>
+    <string name="alert_username_exists">帐号已经存在，请拟订一个新的帐号名称</string>
+    <string name="alert_username_format_error">帐号只能由汉字、字母、数字、下划线构成（不区分大小写）</string>
+    <string name="alert_username_over_length">帐号长度请控制在7个汉字或14个字符（字母、数字、下划线）以内</string>
+    <string name="alert_password_too_simple">密码过于简单，密码中不能包含用户名</string>
+    <string name="alert_password_over_length">密码长度不正确，必须是6–14个字符</string>
+    <string name="alert_password_format_error">密码格式错误，必须是6–14个字符，且不能包含用户名</string>
+    <string name="alert_password_confirm_different">确认密码与密码不一致，请重新输入</string>
+    <string name="alert_verifycode_error">验证码输入错误，请重新输入</string>
+    <string name="alert_verifycode_need">请输入验证码</string>
+    <string name="input_verifycode_need">填写验证码</string>
+    <string name="alert_regist_fail">注册失败，请重新输入</string>
+    <string name="registing">正在注册</string>
+    <string name="logining">正在登录</string>
+    <string name="logout_account">退出此帐号</string>
+    <string name="not_login">你还没有登录哦！</string>
+    <string name="login">登 录</string>
+    <string name="yes">确定</string>
+    <string name="username">用户名</string>
+    <string name="password">密码</string>
+    <string name="password1">密</string>
+    <string name="password2">码</string>
+    <string name="password_confirm">确认密码</string>
+    <string name="sex">性别</string>
+    <string name="sex1">性</string>
+    <string name="sex2">别</string>
+    <string name="male">男</string>
+    <string name="female">女</string>
+    <string name="verifycode">验证码</string>
+    <string name="verifycode2">验证码:</string>
+    <string name="not_clear">看不清</string>
+    <string name="username_hint">不超7个汉字14个字符</string>
+    <string name="password_hint">6–14位，区别大小写</string>
+    <string name="phone_hint">以"0"开头,格式为010–88888888</string>
+
+    <!-- 陈列 模块 -->
+
+    <string name="upload_image_title">上传照片</string>
+    <string name="sdcard_is_unmounted">SD卡不可读</string>
+    <string name="doing_query">正在查询，请稍候…</string>
+    <string name="please_wait">正在加载，请稍候…</string>
+
+    <!-- 进度查询 里面 引入变量 。。 -->
+    <string name="progess_item_count"> %1$d条</string>
+    <string name="home_page_message_count">%1$d</string>
+
+    <!-- 模块名称 -->
+    <string name="worksite_mamage_module">现场管理</string>
+
+    <!-- 登录hint -->
+
+    <string name="login2_before">用户名或手机号登录</string>
+    <string name="login2">请输入妈妈100帐号</string>
+
+    <!-- 后台检查软件版本及下载 -->
+    <string name="checking_network">正在检查网络…</string>
+    <string name="checking_app_version">正在检查软件版本…</string>
+    <string name="latest_app_version">您已经是最新的版本啦!</string>
+    <string name="no_sdcard_warning">本地sd卡不存在!</string>
+    <string name="checking_data_version">正在检查数据版本…</string>
+    <string name="latest_data_version">模块数据已经是最新,不用更新!</string>
+    <string name="updating_module_data">正在更新模块数据…</string>
+    <string name="update_module_data_success">模块数据更新成功!</string>
+
+    <!-- 后台检查数据库版本及下载 -->
+
+
+    <!-- about begin -->
+    <string name="gl_about_version">版本:</string>
+    <string name="gl_about_copyright">妈妈100版权所有</string>
+    <string name="gl_about_copyright2">Copyright © 2010 www.mama100.com</string>
+
+    <!-- about end -->
+
+
+    <!-- 找回密码 -->
+    <string name="lookfor_pwd_warning1">请输入您的手机号码，并点击发送验证码。您会在短信中收到一个6位数字组成的验证码。如果没有收到，请点击重新发送。</string>
+    <string name="lookfor_pwd_warning2">帐号不存在，请重新输入</string>
+    <string name="lookfor_pwd_warning3">请输入您的帐号</string>
+    <string name="lookfor_pwd_warning4">手机号码不能为空</string>
+    <string name="lookfor_pwd_warning5">请输入11位手机号码</string>
+    <string name="lookfor_pwd_warning6">验证码已发送到您的手机,请查收.</string>
+    <string name="lookfor_pwd_warning7">正在发送验证码到您手机…</string>
+    <string name="lookfor_pwd_warning8">一天最多只能取回三次验证码</string>
+    <string name="lookfor_pwd_warning9">登录密码取回成功,请留意接收到的短信.</string>
+    <string name="lookfor_pwd_warning10">正在取回登录密码,请稍后…</string>
+    <string name="lookfor_pwd_warning11">验证码不能为空</string>
+    <string name="lookfor_pwd_warning12">验证码必须是4位数字</string>
+    <string name="lookfor_pwd_warning13">已发送密码至您的手机号码。</string>
+    <string name="lookfor_pwd_warning14">为确保您的帐号安全，请在登录后，在设置中修重新设置密码。如果没有收到，请重新找回。
+
+\n谢谢！</string>
+    <string name="lookfor_pwd_warning15"><u>马上登录</u></string>
+    <string name="lookfor_pwd_phone1">手机：</string>
+    <string name="lookfor_pwd_phone2">验证码：</string>
+    <string name="lookfor_pwd_phone3">手机号：</string>
+    <string name="lookfor_pwd_phone1_hint">请输入手机号码</string>
+    <string name="lookfor_pwd_phone2_hint">请输入验证码</string>
+    <string name="lookfor_pwd_phone3_hint">填写手机号</string>
+    <string name="lookfor_pwd_label1">发送验证码</string>
+    <string name="lookfor_pwd_label2">重新发送</string>
+    <string name="lookfor_pwd_label3">%1$d秒</string>
+    <string name="lookfor_pwd_label4">提交验证码</string>
+    <string name="glb_message_auto_submitting">正在提交,请稍后…</string>
+
+    <!-- Get Login Pwd Act End -->
+
+
+    <!-- 注册 -->
+    <string name="register">注册</string>
+    <string name="register1">6–18位</string>
+    <string name="register2">请输入邮箱帐号</string>
+    <string name="register3">请输入密码</string>
+    <string name="register4">请确认密码</string>
+    <string name="register_tv_account">邮&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;箱:</string>
+    <string name="register_tv_password">密&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;码:</string>
+    <string name="register_tv_password2">确认密码:</string>
+    <string name="register_two_pwd_unlike">您输入的两次密码不一致，请检查重新输入</string>
+
+    <!-- 编辑我的资料 -->
+    <string name="edit_profile">编辑我的资料</string>
+    <string name="edit_profile_label1">上传头像</string>
+    <string name="edit_profile_label2">昵称</string>
+    <string name="edit_profile_label3">宝宝名</string>
+    <string name="edit_profile_label4">宝宝性别</string>
+    <string name="edit_profile_label5">宝宝生日</string>
+    <string name="edit_profile_label6">宝宝名称长度不能超过30位，请重新输入</string>
+    <string name="edit_profile_warning1">您的个人资料还没提交到服务器，确定要退出吗？</string>
+
+    <!-- SSO 单点登录 错误 -->
+    <string name="connect_server_error1">连接服务器错误 - </string>
+
+    <!-- 新浪微博 -->
+    <string name="x_demo">新浪Demo</string>
+    <string name="demo_select">选择授权方式：</string>
+    <string name="demo_webview_auth">网页授权</string>
+    <string name="demo_dialog_auth">对话框授权</string>
+    <string name="send_weibo_sucess">恭喜你，分享成功！</string>
+    <string name="send_weibo_failed">分享失败</string>
+    <string name="auth_alive">点击解绑</string>
+    <string name="auth_canceled">已取消绑定</string>
+    <string name="make_auth">点击绑定</string>
+    <string name="x_auth">绑定微博</string>
+    <string name="cancel_auth_tip">确定取消绑定新浪微博吗？</string>
+    <string name="my_weibo">我的微博</string>
+    <string name="xweibo_other_error">Sorry!操作失败了，请稍候再试吧</string>
+    <string name="xweibo_service_unavailable">新浪微博服务暂停了，请稍候再试吧</string>
+    <string name="auth_error01">授权已失效，请重新授权吧</string>
+    <string name="share_error01">发微博太多啦，休息一会儿吧</string>
+    <string name="share_error02">已经分享类似内容了，试试别的吧</string>
+    <string name="share_error03">分享失败：包含广告信息</string>
+    <string name="share_error04">分享成功，目前服务器会有延迟，请耐心等待</string>
+    <string name="share_error05">输入文字太长，请确认不超过140个字符</string>
+    <string name="share_error06">不支持的图片类型，仅仅支持JPG、GIF、PNG</string>
+    <string name="share_error07">图片太大了</string>
+    <string name="share_error08">分享失败:包含非法内容</string>
+    <string name="follow_error01">你不能关注自己啦</string>
+    <string name="follow_error02">加关注请求超过上限啦</string>
+    <string name="follow_error03">已经关注此用户啦</string>
+    <string name="follow_error04">你今天已经关注很多喽，接下来想想如何让大家都来关注你吧！</string>
+
+    <!-- 设置 -->
+    <string name="setting">设置</string>
+    <string name="feed_back">意见反馈</string>
+    <string name="about_us">关于我们</string>
+    <string name="check_version">检测新版本</string>
+    <string name="cancel_account">注销帐号</string>
+    <string name="about_title">妈妈100手机版</string>
+    <string name="follow_mama100_X">关注妈妈100官方微博</string>
+    <string name="mama100_X">妈妈100的微博</string>
+    <string name="latest_version">最新版本：</string>
+    <string name="cur_version">当前版本：</string>
+    <string name="update_version">更新新版</string>
+    <string name="not_latest_version">当前不是最新版，点击更新。</string>
+    <string name="is_latest_version">当前软件已是最新版，不需要更新。</string>
+    <string name="uploading_feed_back">正在提交您的反馈，请稍候&#8230;</string>
+    <string name="thanks_feed_back">感谢您的宝贵意见！</string>
+    <string name="feed_back_tip">您的每一条建议，都是我们进步的阶梯(最多输入两百字)！</string>
+    <string name="response_feed_back_tip">我们会在2个工作日内进行回复，请留意查收消息，谢谢！</string>
+    <string name="feed_back_null">内容不能为空</string>
+    <string name="change_pwd">修改密码</string>
+    <string name="old_pwd">旧&#160;&#160;&#160;&#160;密&#160;&#160;&#160;&#160;码：</string>
+    <string name="new_pwd">新&#160;&#160;&#160;&#160;密&#160;&#160;&#160;&#160;码：</string>
+    <string name="new_pwd2">确认新密码：</string>
+    <string name="show_pwd">显示密码</string>
+    <string name="input_pwd_hint">6–18位</string>
+    <string name="pwd_max_len">18</string>
+    <string name="call_parenting_adviser">呼叫我的育儿顾问</string>
+    <string name="parenting_adviser_phone">400–830–1055</string>
+    <string name="call400_charge_tips">（按市话收费）</string>
+    <string name="pwd_lenless_error">密码至少6位</string>
+    <string name="pwd_null_error">请输入旧密码</string>
+    <string name="pwd_ill_chars">有不正确字符</string>
+	
+    
+    <!-- 修改密码页面  -->
+    <string name="oldpwd_lenless_error">您输入的旧密码不足6位字符，请重新输入</string>
+    <string name="oldpwd_null_error">请输入旧密码</string>
+    <string name="newpwd_lenless_error">您输入的新密码不足6位字符，请重新输入</string>
+    <string name="newpwd_null_error">新密码不能为空</string>
+    <string name="newpwd2_lenless_error">您输入的确认密码不足6位字符，请重新输入</string>
+    <string name="newpwd2_null_error">请重复输入新密码</string>
+    <string name="two_pwd_unlike">您输入的两次新密码不相符，请检查无误后重新输入</string>
+    <string name="newpwd_is_oldpwd">新密码不能跟原始密码相同，请重新输入</string>
+    
+    
+    <!-- 个人信息 -->
+    <string name="edit_my_profile">编辑我的资料</string>
+    <string name="my_profile">我的资料</string>
+    <string name="nick_name">昵称：</string>
+    <string name="bb_name">宝宝名：</string>
+    <string name="nickname_len_short_error">您的昵称太短了，换个长点的试试吧</string>
+    <string name="nickname_len_long_error">亲，您的昵称太长了</string>
+    <string name="nickname_null_error">您的昵称不能为空</string>
+    <string name="nickname_error">勿用标点符号或空格</string>
+    <string name="updating_profile_tip">正在更新资料，请稍候&#8230;</string>
+    <string name="bb_gender">宝宝性别：</string>
+    <string name="bb_birthday">宝宝生日：</string>
+    <string name="input_nickname_tip">请输入昵称</string>
+    <string name="input_birthday_tip">请点击右边的日历按钮</string>
+    <string name="homepage_1">我的会员卡</string>
+    <string name="homepage_2">拍乐秀</string>
+    <string name="homepage_3_old">个人信息</string>
+    <string name="homepage_3">母婴店</string>
+    
+    <string name="homepage_4">激活会员卡</string>
+    <string name="homepage_warning_1">与服务器连接出现问题，获取结果为空</string>
+    <string name="homepage_warning_2">获取活动图片为空</string>
+
+    <!-- 找回密码 -->
+
+
+    <!-- 拍乐秀 -->
+    <!-- 拍乐秀 -->
+    <string name="photo_title">拍乐秀</string>
+    <string name="init_photo_failed">初始拍照失败，请重拍</string>
+    <string name="not_share_comfirm">您还没有分享呢，确定返回吗？</string>
+    <string name="auth_succeed_toshare">绑定成功，点击分享</string>
+    
+    <!-- 自助积分 -->
+    <string name="regpoint_1">自助积分的用途说明:</string>
+    <string name="regpoint_2">自助积分主要用于方便用户在家里自己积分，不需要到会员店去积分。</string>
+    <string name="regpoint_3">请输入您的产品序列号和防伪码:</string>
+    <string name="regpoint_4">您购买的产品是%1$s,将增加%2$s积分，请确认您的购买产品门店:</string>
+    <string name="regpoint_6">恭喜您,\n %1$s \n 现在您的总积分余额 %2$d分。</string>
+    <string name="regpoint_5">告诉妈妈100您的购买门店，可以让我们为您提供更好的后续服务。</string>
+    <string name="regpoint_label1">产品序列号：</string>
+    <string name="regpoint_label2">防伪码：</string>
+    <string name="regpoint_label3">门店编号：</string>
+    <string name="regpoint_label4">门店编码</string>
+    <string name="regpoint_label5">有问题请点这里</string>
+    <string name="regpoint_hint1">12位或14位数字</string>
+    <string name="regpoint_hint2">16位数字</string>
+    <string name="regpoint_hint3">5位或6位数字（必填）</string>
+    <string name="regpoint_title">自助积分</string>
+    <string name="regpoint_et_serial_length_error">产品序列号输入不正确，应为:%1$s位或%2$s位%3$s</string>
+    <string name="regpoint_et_anticode_length_error">防伪码输入不正确，应为:%1$s位%2$s</string>
+    
+    
+    <!-- 积分模块  积分扫码页面 -->
+    <string name="regpoint_scan_tips_1">请将防伪条形码置于红色区域内并对准红色扫描线，软件将自动识别。</string>
+    
+    
+    <!-- 积分模块  积分帮助页面 -->
+    <string name="regpoint_help_tips_1">1.妈妈100积分有什么用？</string>
+    <string name="regpoint_help_tips_2">成为合生元会员后，每次在门店购买合生元、葆艾等产品，就可以凭会员身份累积积分，积分累积一定数额后便可以兑换丰富礼品。</string>
+    <string name="regpoint_help_tips_3">2.去哪里查看产品防伪码</string>
+    <string name="regpoint_help_tips_4">您可以在产品包装盒上找到防伪标签，刮开涂层后即可获取防伪码。</string>
+    <string name="regpoint_help_tips_5">3.如何扫码积分？</string>
+    <string name="regpoint_help_tips_6">将刮开的防伪条形码置于扫码器红色区域内，并对准红色的扫描线，软件将自动识别。</string>
+    <string name="regpoint_help_tips_7">4.为何选择门店？</string>
+    <string name="regpoint_help_tips_8">选择母婴店积分，是为了方便给您提供更好的后续服务，所以为了保证您的积分正常，请选择与购买产品对应正确的母婴店。</string>
+    
+    
+    <!-- 积分模块  手动输码页面 -->
+    <string name="regpoint_input_tips">防伪码:</string>
+    <string name="regpoint_input_hint">请输入16位数字防伪码</string>
+    <string name="regpoint_input_error_1">防伪码不能为空</string>
+    <string name="regpoint_input_error_2">请输入16位数字防伪码</string>
+    <string name="regpoint_input_btn">验证</string>
+   	<string name="regpoint_input_verify">正在进行防伪码验证，请稍后</string>
+    
+    <!-- 积分模块  闪屏页面  -->
+   	<string name="regpoint_flash_tips_1">自助积分功能已经全新升级，扫一扫，轻松积分！</string>
+   	<string name="regpoint_flash_tips_2">温馨提示:\n扫码时，请将产品防伪码放置红色区域框内并对准扫码线，软件将自动识别。</string>
+   	<string name="regpoint_flash_btn_1">我知道了</string>
+    
+    <!-- 积分模块  人工积分页面  -->
+	<string name="regpoint_failure_tips_1">温馨提示:</string>
+   	<string name="regpoint_failure_title">自助积分</string>
+   	<string name="regpoint_failure_tele">400\-830\-1055</string>
+   	
+   	<!-- 积分模块   积分成功页面  -->
+	<string name="regpoint_success_btn_1">继续积分</string>
+	<string name="regpoint_success_btn_2">退出积分</string>
+	<string name="regpoint_success_tips_1">积分成功</string>
+   	<string name="regpoint_success_tips_2">恭喜您，成功积分280分！\n现在可用积分余额为28000分</string>
+   	
+   	
+   	<!-- 积分模块   产品信息页面  -->
+   	<string name="regpoint_product_title">产品信息</string>
+   	<string name="regpoint_product_tips_1">您购买的产品是:</string>
+   	<string name="regpoint_product_btn">下一步</string>
+   	
+   	<!-- 积分模块   积分记录页面  -->
+   	<string name="regpoint_history_tab_label">点击获取记录…</string>
+   	<string name="regpoint_history_record_over">已经是最后一条了</string>
+   	<string name="regpoint_history_record_none">无积分记录</string>
+   	
+   	
+   	<!-- 积分模块   选择门店页面  -->
+	<string name="regpoint_shop_title">选择门店</string>
+	<string name="regpoint_shop_tips_2">请选择购买该产品的母婴店:</string>
+	<string name="regpoint_shop_tips_3">您还未登录，请先登录！</string>
+	<string name="regpoint_shop_tips_4">开通妈妈100电子会员卡，\n免费领取积分大礼，兑换百万件优惠商品！</string>
+	<string name="regpoint_shop_tips_5">我关注的母婴店</string>
+	<string name="regpoint_shop_tips_6">我附近的母婴店</string>
+	<string name="regpoint_shop_tips_7">请您先选择购买产品的母婴店，再提交</string>
+	<string name="regpoint_shop_tips_8">可免费领取100积分！</string>
+	<string name="regpoint_shop_tips_9">您好，宝宝靓妈咪，\n您还没有开通妈妈100电子会员卡。</string>
+	<string name="regpoint_shop_tips_10">确认选择该门店？</string>
+	<string name="regpoint_shop_hint_1">请选择购买该产品的母婴店</string>
+   	<string name="regpoint_shop_btn_1">显示附近更多门店</string>
+	<string name="regpoint_shop_btn_2">正在加载，请稍后..</string>
+	<string name="regpoint_shop_error_1">关注门店加载失败</string>
+	<string name="regpoint_shop_error_2">没有关注的门店</string>
+	<string name="regpoint_shop_error_3">获取门店失败,请稍后重试</string>
+	<string name="regpoint_shop_error_4">无法获取您的位置，请稍后重试</string>
+	<string name="regpoint_shop_over_1">亲，列表已经加载完了 ^_^</string>
+	
+    <!-- 我的消息 -->
+    <string name="message_title">我的消息</string>
+    <string name="message_title2">消息详情</string>
+    <!-- 欢迎界面 -->
+    <!-- 欢迎界面 -->
+    <string name="exit_warning_msg">确定要离开妈妈100吗？</string>
+    <string name="cancel_warning_msg">确定要退出当前帐号么？</string>
+    
+    
+    <!-- 消息界面 -->
+    <string name="pull_to_refresh_pull_label">上拉可以刷新</string>
+    <string name="pull_to_refresh_pull_label1">下拉可以刷新</string>
+    <string name="pull_to_refresh_release_label">松手刷新…</string>
+    <string name="pull_to_refresh_refreshing_label">正在下载…</string>
+    <string name="pull_to_refresh_tap_label">点击获取消息…</string>
+    <string name="pull_to_refresh_tap_label4">点击获取新的消息…</string>
+    <string name="pull_to_refresh_tap_label3">已经是最后一条了</string>
+    <string name="no_message_record">无消息记录</string>
+    <string name="saving_bitmap">正在保存图片</string>
+
+    <!-- 2.1版本 -->
+    <string name="reg_history">积分记录</string>
+    <string name="reg_code"> 电子验证码：</string>
+    <string name="reg_card_desc_title">妈妈100电子会员卡，简单你的积分兑换！</string>
+    <string name="reg_card_desc">温馨提示：点击会员卡获取电子验证码，在妈妈100POS机输入兑换码，即可兑换成功。电子验证码2分钟内有效，过期请重新获取。兑换前请先完善您的个人资料。</string>
+    <string name="reg_code_used">积分兑换码已使用！</string>
+    <string name="reg_code_remake">重新获取兑换码</string>
+    <string name="reg_code_expire">积分兑换剩余时间:</string>
+    <string name="reg_code_un_open1">现在开通妈妈100电子会员卡，立即领取100会员积分，兑换超值大礼</string>
+    <string name="reg_code_un_login1">您还未登录哦！</string>
+ 	<string name="reg_code_un_login2">请点击下方的按钮登录</string>
+ 	
+ 	
+    <string name="receiving_name01">姓名：</string>
+    <string name="receiving_name02">姓名：</string>
+    <string name="province_and_city">省市：</string>
+    <string name="full_address01">街区：</string>
+   	<string name="address_manage">管理收货信息</string>
+    <string name="input_receiving_name">请输入您的姓名</string>
+    <string name="input_full_address">请输入详细的收货地址</string>
+    <string name="oper_too_frequently02">为了账户安全，请120秒后再尝试</string>
+    <string name="complete_receiver_inf">你需要完善地址信息后才能使用</string>
+    <string name="receiver_address_null_illlegal">详细地址不能为空</string>
+    <string name="receiver_address_complete_illlegal">您的地址信息不完整</string>
+    
+    <string name="receiver_province_and_city_null_illlegal">请选择省份城市</string>
+    <string name="receiver_null_illlegal">姓名填写不能为空</string>
+    <string name="receiver_name_illlegal">您的姓名太短了，换个长点的试试吧</string>
+    <string name="receiver_long_illlegal">亲，您的姓名太长了</string>
+    <string name="baby_birthdate_illlegal">请输入宝宝的生日</string>
+    <string name="baby_sex_illlegal">请选择宝宝的性别</string>
+
+    <!-- 2.2版本 -->
+    <string name="login_with_qq_account">QQ帐号登录</string>
+    <string name="login_with_sina_weibo_account">微博帐号登录</string>
+    <string name="bind_with_sina_weibo_account">绑定微博帐号</string>
+    <string name="login_with_member_phone">会员手机登录</string>
+    <string name="check_email_illegal">请输入正确的邮箱地址</string>
+    <string name="please_login_label">请登录</string>
+    <string name="add_profile">补充个人资料</string>
+    <string name="baby_info">宝宝信息</string>
+    <string name="baby">宝宝</string>
+    <string name="baby_name">宝宝名称:</string>
+    <string name="baby_name_hint">请输入宝宝名称</string>
+    <string name="baby_name_len_short">您的宝宝名称太短了，换个长点的试试吧</string>
+    <string name="baby_name_len_long">亲，您的宝宝名称太长了</string>
+    <string name="baby_birth">宝宝生日:</string>
+    <string name="baby_birth_hint">请输入宝宝生日</string>
+    <string name="baby_sex">宝宝性别:</string>
+    <string name="add_baby_exceed_max_warning">您最多只能添加3个宝宝哦!</string>
+    <string name="third_party_login_label">可以用以下帐号登录</string>
+    <string name="delete_baby_info_warning">您确定要删除宝宝信息吗？</string>
+    <string name="setting_pwd">设置密码</string>
+    <string name="login_crm_act_tv_exit_tips2">您确定要退出会员卡激活吗?</string>
+    <string name="login_crm_act_tv_exit_tips3">您确定要退出会员手机登录吗?</string>
+    <string name="receiver_name">收货人姓名</string>
+    <string name="receiver_province_and_city">请选择所在省市地区</string>
+    <string name="receiver_address">详细街道地址</string>
+    <string name="full_address02">地址：</string>
+    <string name="activate_e_card">激活会员卡</string>
+    <string name="tips_input_cellphone">请输入您开通妈妈100会员卡时登记的手机号</string>
+    <string name="tips_input_cellphone2">为确保帐户有效,请填写真实信息</string>
+    <string name="tips_input_verifycode">如果长时间没有收到验证码,请返回重新获取</string>
+    <string name="account_config">帐号设置</string>
+    <string name="manage_receiver_address">收货信息管理</string>
+    <string name="weibo_sina">新浪微博</string>
+    <string name="unbind">未绑定</string>
+    <string name="welcome_word">马上登录!</string>
+    <string name="account">会员账号：</string>
+    <string name="cancel_complete_address_warning">如未填写收货信息，将无法使用电子会员卡，确认离开吗？</string>
+    <string name="activate_member_card_warning_tips">您尚未领取电子会员卡。\n领取电子会员卡，让积分兑换更轻松！马上领取</string>
+    <string name="activate_member_card_warning_tips5">您尚未领取电子会员卡。\n请先领卡后再查看收货地址。马上领取</string>
+    <string name="activate_member_card_warning_tips3">您尚未领取电子会员卡。\n请先领卡后再查询积分记录。马上领取</string>
+    <string name="activate_member_card_warning_tips4">您尚未领取电子会员卡。\n请先领卡后再使用自助积分。马上领取</string>
+    <string name="activate_member_card_warning_tips2">恭喜您成功登录！\n领取电子会员卡，让积分兑换更轻松！马上领取</string>
+    
+    
+    
+    
+
+</resources>

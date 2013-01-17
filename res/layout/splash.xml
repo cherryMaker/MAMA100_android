@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layout_root"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" android:background="@drawable/bg_wall2">
+
+    <LinearLayout
+        android:id="@+id/bottom"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:background="@color/transparent_color1"
+        android:visibility="invisible"
+        android:orientation="horizontal" >
+
+
+
+        <Button
+            android:id="@+id/btn_login"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_weight="1"
+            android:layout_toLeftOf="@+id/vertical_seprator"
+            android:background="@drawable/selector_cancel"
+            />
+
+      <ImageView
+            android:id="@+id/vertical_seprator"
+            android:layout_width="1dp"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:visibility="visible"
+            android:src="@drawable/vertical_sperator_splash_between" />
+                
+        <Button
+            android:id="@+id/btn_register"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_alignBaseline="@+id/btn_login"
+            android:layout_alignBottom="@+id/btn_login"
+            android:layout_toRightOf="@+id/vertical_seprator"
+            android:background="@drawable/selector_register"
+            />
+   
+
+</LinearLayout>
+
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/bottom"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" android:src="@drawable/welcome_logo" android:layout_marginBottom="10dp" android:layout_centerVertical="true"/>
+
+</RelativeLayout>

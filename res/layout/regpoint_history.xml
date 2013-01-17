@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <include layout="@layout/regpoint_above_profile_bar" />
+
+      <!-- 没有记录的时候显示 ,默认隐藏-->
+    <TextView 
+        android:id="@+id/no_record"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center_horizontal"
+        android:text=""
+        android:textColor="#000000"
+        android:visibility="gone"
+        />
+   
+    <com.mama100.android.member.widget.listview.PulldownToRefreshListView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/listview_regpoint"
+        android:layout_marginTop="5dp"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:cacheColorHint="#00000000"
+        android:divider="#00000000"
+        android:fadingEdge="none"
+        android:listSelector="#00000000"
+        android:scrollingCache="false" />
+    
+    
+   
+
+</LinearLayout>

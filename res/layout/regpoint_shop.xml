@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:paddingTop="10dp"
+    android:paddingLeft="5dp" 
+    android:paddingRight="5dp">
+
+    <TextView
+        android:id="@+id/help"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:text="@string/regpoint_label5"
+        android:textColor="@color/mama100Orange2"
+        android:textSize="16dp" />
+    
+     <TextView
+         android:id="@+id/top"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/regpoint_shop_tips_2"
+        android:textColor="@color/mama100Orange2"
+        android:textSize="18dp"
+        android:textStyle="bold" 
+        android:layout_alignParentTop="true"/>
+
+    <ListView
+        android:id="@+id/sideShopList"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_above="@id/help"
+        android:layout_below="@id/top"
+        android:divider="@drawable/multiple_row_seperator"
+        android:fadingEdge="none"
+        android:footerDividersEnabled="true"
+        android:listSelector="#00000000"
+        android:scrollingCache="false" 
+        android:background="@drawable/bbshop_item_bg">
+    </ListView>
+
+</RelativeLayout>

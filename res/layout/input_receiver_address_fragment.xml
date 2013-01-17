@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="10dip"
+    android:orientation="vertical"
+    android:paddingLeft="10dip"
+    android:paddingRight="10dip"
+    android:paddingTop="20dip" >
+
+    <!-- ********************************************* -->
+    <!-- ***********登录框 Start, 留待以后优化********** -->
+    <!-- ********************************************* -->
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="@string/address_manage" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/multiple_row_above" >
+
+        <TextView
+            android:id="@+id/receiver_name_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:paddingLeft="22dp"
+            android:paddingRight="2dp"
+            android:text="@string/receiving_name02"
+            android:textColor="#000000"
+            android:textSize="@dimen/control_font_size" />
+
+        <EditText
+            android:id="@+id/receiver_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left|center_vertical"
+            android:layout_marginRight="10dp"
+            android:layout_weight="2"
+            android:background="@null"
+            android:hint="@string/receiver_name"
+            android:maxLength="18"
+            android:nextFocusDown="@+id/receiver_address"
+            android:textSize="@dimen/control_font_size" >
+        </EditText>
+    </LinearLayout>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="0.1dp"
+        android:layout_marginLeft="0.8dp"
+        android:layout_marginRight="0.8dp"
+        android:background="@drawable/multiple_row_seperator" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/multiple_row_middle" >
+
+        <TextView
+            android:id="@+id/login_account_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:paddingLeft="20dp"
+            android:paddingRight="2dp"
+            android:text="@string/province_and_city"
+            android:textColor="#000000"
+            android:textSize="@dimen/control_font_size" />
+
+        <EditText
+            android:id="@+id/receiver_province_and_city"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left|center_vertical"
+            android:layout_marginRight="10dp"
+            android:layout_weight="2"
+            android:background="@null"
+            android:focusable="false"
+            android:hint="@string/receiver_province_and_city"
+            android:textSize="@dimen/control_font_size" 
+            android:drawableRight="@drawable/selector_calendar">
+        </EditText>
+    </LinearLayout>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="0.1dp"
+        android:layout_marginLeft="0.8dp"
+        android:layout_marginRight="0.8dp"
+        android:background="@drawable/multiple_row_seperator" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/multiple_row_below" >
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:paddingLeft="20dp"
+            android:paddingRight="2dp"
+            android:text="@string/full_address01"
+            android:textColor="#000000"
+            android:textSize="@dimen/control_font_size" />
+
+        <EditText
+            android:id="@+id/receiver_detail_address"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left|center_vertical"
+            android:layout_marginRight="10dp"
+            android:layout_weight="2"
+            android:background="@null"
+            android:hint="@string/receiver_address"
+            android:nextFocusUp="@+id/receiver_name"
+            android:textSize="@dimen/control_font_size" >
+        </EditText>
+    </LinearLayout>
+
+    <!-- ******************************************* -->
+    <!-- ***********登录框 End, 留待以后优化********** -->
+    <!-- ******************************************* -->
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dip" 
+        android:gravity="right">
+
+        <Button
+            android:id="@+id/submit_address"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/selector_submit2"
+            />
+
+    </LinearLayout>
+
+</LinearLayout>

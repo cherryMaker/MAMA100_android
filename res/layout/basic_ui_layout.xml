@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<com.mama100.android.member.widget.HideLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/background"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+
+      
+
+        <!-- ************************** -->
+        <!-- *****用于隐藏输入法******** -->
+        <!-- ************************** -->
+
+        <EditText
+            android:id="@+id/hide_input_method"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone" />
+
+        <LinearLayout
+            android:id="@+id/ui_content"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="43dp" >
+        </LinearLayout>
+        
+          <include
+            android:id="@id/menutop"
+            android:layout_alignParentTop="true"
+            layout="@layout/basic_menu_top" />
+    </RelativeLayout>
+
+</com.mama100.android.member.widget.HideLinearLayout>

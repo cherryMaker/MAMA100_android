@@ -1,0 +1,248 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+
+    <!-- 从上往下 -->
+
+
+    <!-- 1，  图片滚动栏 -->
+    <!-- 高度 280dp -->
+
+    <com.mama100.android.member.widget.scrollview.HorizontalPager
+        android:id="@+id/home_act_pager"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/home_act_pager_hei"
+        android:layout_alignParentTop="true"
+        android:orientation="vertical"/>
+    
+    <!-- 参照 -->
+    
+
+    <!-- 2, 圆点滚动栏 , 距离顶部 230dp -->
+    <!-- 高度 自适应 -->
+
+    <LinearLayout
+        android:id="@+id/home_act_idx_container"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:gravity="right"
+        android:orientation="horizontal" 
+        android:layout_marginTop="@dimen/idx_container_hei" android:layout_marginRight="2dp" android:layout_marginBottom="2dp"/>
+
+    <!-- 3,  个人信息 栏， 包括 头像，昵称，积分，及帮助 -->
+    <!-- 在圆点滚动栏 下面， 在 分界线 上面 -->
+    <!-- 高度 自适应 -->
+
+    <RelativeLayout
+        android:id="@+id/user_profile_bar"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/home_act_idx_container" 
+        >
+
+        <!-- 3.1 个人昵称栏 -->
+        <!-- 高度 自适应 -->
+
+        <LinearLayout
+            android:id="@+id/nickname_bar"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:focusable="true"
+            android:background="@drawable/center_image2" >
+
+            <TextView
+                android:id="@+id/nickname"
+                android:layout_width="180dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="86dip"
+                android:gravity="center_vertical"
+                android:text=""
+                android:textColor="#ffffff"
+                android:textSize="20sp" android:singleLine="true" android:ellipsize="end"/>
+        </LinearLayout>
+
+        <!-- 3.2  积分余额 栏  及帮助栏 -->
+        <!-- 高度 自适应 -->
+
+        <LinearLayout
+            android:id="@+id/reg_point_bar_bg"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:focusable="true"
+            android:layout_alignBottom="@+id/reg_point_bar"
+            android:layout_alignTop="@+id/reg_point_bar"
+            android:orientation="vertical" android:background="@drawable/bg_wall">
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/reg_point_bar"
+            android:layout_width="fill_parent"
+            android:layout_height="41dp"
+            android:layout_below="@id/nickname_bar"
+            android:background="@drawable/bg_wall">
+
+            <TextView
+                android:id="@+id/regpoint_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="86dip"
+                android:layout_marginTop="5dip"
+                android:text="积分余额："
+                android:textSize="16sp" android:textColor="@color/edittext_head_color" android:layout_gravity="center_vertical" android:layout_centerVertical="true"/>
+
+            <TextView
+                android:id="@+id/reg_balance"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dip"
+                android:layout_toRightOf="@+id/regpoint_tv"
+                android:textColor="@color/mama100Orange"
+                android:textSize="@dimen/control_font_size2" android:layout_gravity="center_vertical" android:layout_centerVertical="true"/>
+
+            <ImageButton
+                android:id="@+id/question"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dip"
+                android:layout_marginRight="22dp"
+                android:background="@drawable/selector_questionmark" 
+                android:layout_centerVertical="true" android:layout_alignParentRight="true"/>
+
+            <ImageView
+                android:id="@+id/imgV_bg"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:background="@drawable/center_image3" />
+
+        </RelativeLayout>
+
+        <!-- 3.3 头像栏 -->
+        <!-- 高度 自适应 -->
+
+        <RelativeLayout
+            android:id="@+id/combine_avatar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="12dp">
+
+            <ImageView
+                android:id="@+id/homepage_avatar"
+                android:layout_width="@dimen/homepage_avatar"
+                android:layout_height="@dimen/homepage_avatar"
+                android:orientation="vertical"
+                android:src="@drawable/default_avatar"
+                android:clickable="true"
+                android:focusable="true" android:layout_centerInParent="true"/>
+
+            <ImageView
+                android:id="@+id/hollow_frame"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:background="@drawable/homepage_avatar_hollow"
+                />
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <!-- 4,分界线 -->
+    <!-- 高度 1dip -->
+
+    <View
+        android:id="@+id/seperator1"
+        android:layout_width="fill_parent"
+        android:layout_height="0.5dp"
+        android:layout_below="@id/user_profile_bar"
+        android:background="@drawable/horizontal_seperator" />
+
+    <!-- 5, 底部按钮 栏 -->
+    <!-- 高度 自适应 -->
+    <RelativeLayout
+        android:id="@+id/bottom_button_bar"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/seperator1" android:background="@drawable/bg_wall"
+        android:layout_centerVertical="true"
+        android:gravity="center">
+
+        <LinearLayout
+            android:id="@+id/middle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:orientation="vertical" >
+
+            <ImageButton
+                android:id="@+id/bt_photo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:background="@drawable/selector_camera" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:text="@string/homepage_2" android:textColor="@color/edittext_head_color"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/left"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="12dp"
+            android:orientation="vertical" >
+
+            <ImageButton
+                android:id="@+id/bt_reg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:background="@drawable/selector_regpoint" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:text="@string/homepage_1" android:textColor="@color/edittext_head_color"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/right"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="12dp"
+            android:orientation="vertical" >
+
+            <ImageButton
+                android:id="@+id/bt_bbshop"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:background="@drawable/selector_bbshop" />
+<!--             <ImageButton
+                android:id="@+id/bt_profile"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:background="@drawable/selector_profile" /> -->
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:text="@string/homepage_3" android:textColor="@color/edittext_head_color"/>
+        </LinearLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

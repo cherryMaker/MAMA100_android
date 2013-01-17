@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 拓展的EditText控件 -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:addStatesFromChildren="true"
+    android:background="@drawable/selector_combine_edittext"
+    android:orientation="horizontal" android:padding="8dp">
+
+    <TextView
+        android:id="@+id/tv_field"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:text="Input:"
+        android:textColor="@color/edittext_head_color"
+        android:textSize="16dp" />
+
+    <!-- 0dip instead of wrap_content for better performance -->
+
+    <EditText
+        android:id="@+id/edt_field"
+        android:layout_width="0dip"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="2dip"
+        android:layout_weight="1"
+        android:background="@color/transparent"
+        android:textColorHint="@color/edittext_hint_color"
+        android:textSize="16dp" android:lines="1" android:singleLine="true" android:ellipsize="end" android:maxLength="30" android:imeOptions="actionNext">
+    </EditText>
+
+</LinearLayout>

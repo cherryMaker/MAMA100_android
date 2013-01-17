@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/regpoint_item_bg"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/above"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:minHeight="30dp"
+        >
+
+        <ImageView
+            android:id="@+id/operatoricon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="26dp"
+            android:src="@drawable/reg_icon_add" />
+
+        <TextView
+            android:id="@+id/regpoint"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="14dp"
+            android:layout_toRightOf="@+id/operatoricon"
+             android:textSize="@dimen/control_font_size2"
+            />
+
+        <TextView
+            android:id="@+id/regdate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginRight="6dp"
+            android:textColor="@color/edittext_head_color"
+            />
+
+    </RelativeLayout>
+
+    <View android:id="@+id/dashline"
+        android:layout_width="fill_parent"
+        android:layout_height="0.3dp"
+        android:background="@drawable/msg_dashline"
+         ></View>
+    
+    <RelativeLayout
+        android:id="@+id/below"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/above"
+        android:minHeight="30dp"
+        >
+
+
+        <TextView
+            android:id="@+id/regact"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+            android:layout_marginRight="6dp"
+            android:layout_centerVertical="true"
+            android:textColor="@color/edittext_head_color"
+            android:textSize="13sp" />
+        
+        
+        <ImageView
+            android:id="@+id/regicon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@id/regact"
+            android:layout_centerVertical="true"
+            android:src="@drawable/reg_icon_buy" />
+
+        <TextView
+            android:id="@+id/regproduct"
+            android:layout_width="200dp"
+            android:maxLines="3"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignTop="@+id/regact"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="56dp"
+            android:textColor="@color/edittext_head_color" />
+
+    </RelativeLayout>
+
+</LinearLayout>

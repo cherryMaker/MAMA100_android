@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+     android:paddingRight="9dp" android:paddingLeft="9dp" android:paddingTop="12dp">
+
+    <TextView
+        android:id="@+id/tv_detail"
+        android:layout_width="fill_parent"
+        android:layout_height="200dp"
+        android:focusableInTouchMode="false"
+        android:paddingTop="24dp" android:layout_alignParentTop="true"/>
+
+<LinearLayout
+    android:id="@+id/layout_concerned_main"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" android:background="@drawable/bbshop_item_bg">
+
+           <RelativeLayout
+        android:id="@+id/layout_top"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" android:layout_marginTop="6dp">
+
+
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="210dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:src="@drawable/bt_calendar_on"
+            android:text="爱婴岛店(test)"
+            android:layout_marginLeft="8dp" android:textColor="@color/mama100Orange2" android:textSize="16sp"/>
+
+        <ImageView
+            android:id="@+id/imgV_loc_img"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_title"
+            android:layout_marginTop="12dp"
+            android:paddingBottom="2dp"
+            android:paddingTop="2dp"
+            android:src="@drawable/spot" android:layout_alignLeft="@id/tv_title"/>
+
+        <TextView
+            android:id="@+id/tv_location"
+            android:layout_width="140dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="1dp"
+            android:layout_toRightOf="@+id/imgV_loc_img"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:text="(test)广东广州市天河区珠江新城" android:textColor="#9f9f9f" android:textSize="13sp" android:layout_alignBottom="@id/imgV_loc_img"/>
+
+        <TextView
+            android:id="@+id/tv_distance"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:singleLine="true"
+            android:textColor="#9f9f9f" android:textSize="13sp" android:layout_alignBottom="@id/imgV_loc_img" android:layout_toRightOf="@id/tv_location" android:layout_marginLeft="4dp"/>
+
+        <ImageView
+            android:id="@+id/imgV_pop"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_location"
+            android:layout_marginTop="10dp"
+            android:paddingBottom="2dp"
+            android:paddingTop="2dp"
+            android:src="@drawable/popularity" android:layout_alignLeft="@id/tv_title"/>
+
+        <TextView
+            android:id="@+id/tv_pop"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="1dp"
+            android:layout_toRightOf="@+id/imgV_pop"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:text="4000人(test)" android:textColor="#9f9f9f" android:textSize="13sp" android:layout_alignBottom="@+id/imgV_pop"/>
+
+        <ImageView
+            android:id="@+id/imgV_arrow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/selector_click_shop_item" android:layout_alignParentRight="true" android:layout_below="@id/tv_location"/>
+
+                <ImageView
+            android:id="@+id/imgV_img_bg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@+id/imgV_arrow"
+            android:layout_marginRight="4dp" android:layout_marginTop="10dp"/>
+                
+                        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="2dp" android:layout_alignBottom="@id/imgV_img_bg" android:layout_alignLeft="@id/imgV_img_bg" android:layout_alignTop="@id/imgV_img_bg" android:layout_alignRight="@id/imgV_img_bg">
+
+            <ImageView
+                android:id="@+id/imgV_img"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:background="@color/transparent" />
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" android:layout_marginTop="10dp">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:orientation="vertical" android:layout_marginRight="4dp">
+
+            <TextView
+                android:id="@+id/tv_addr_tip"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="地址：" android:layout_marginLeft="6dp" android:layout_marginTop="6dp" android:textColor="#9f9f9f" android:textSize="15sp"/>
+
+            <TextView
+                android:id="@+id/tv_address"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/tv_addr_tip"
+                android:text="广州市天河区珠江新城广州国际金融中心(友谊商店二层)" android:maxLines="2" android:ellipsize="end" android:layout_alignTop="@id/tv_addr_tip" android:textColor="#4d4d4d" android:lines="2" android:layout_marginRight="5dp" android:textSize="15sp"/>
+
+            <TextView
+                android:id="@+id/tv_phonenum"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="020-84340182"
+                android:textColor="#4d4d4d" android:layout_alignTop="@id/imgV_call" android:layout_alignBottom="@id/imgV_call" android:gravity="center" android:layout_toLeftOf="@id/imgV_call" android:layout_marginRight="4dp" android:textSize="18sp"/>
+
+            <ImageView
+                android:id="@+id/imgV_call"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/call_shop" android:layout_below="@id/tv_address" android:layout_alignParentRight="true" android:layout_marginRight="8dp" android:layout_marginTop="6dp"/>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/ImageView01"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp" android:background="@drawable/shop_list_line" android:layout_marginRight="4dp" android:layout_marginLeft="4dp"/>
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="我最近的订单" android:layout_marginTop="16dp" android:textSize="13sp" android:layout_marginLeft="6dp" android:textColor="#9f9f9f"/>
+
+    <LinearLayout
+        android:id="@+id/layout_orders"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" android:layout_marginRight="8dp" android:layout_marginTop="8dp" android:paddingLeft="6dp">
+
+        <include
+            android:id="@+id/order_item"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:visibility="gone"
+            layout="@layout/concerned_order_item"/>
+
+    </LinearLayout>
+    
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:orientation="horizontal" android:layout_marginBottom="16dp" android:layout_marginLeft="6dp" android:layout_marginRight="6dp">
+
+        <ImageView
+            android:id="@+id/imgV_withvip"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="6dp"
+            android:background="@drawable/with_vip"
+            android:onClick="onClickPrivilege" />
+
+        <ImageView
+            android:id="@+id/imgV_withcard"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="6dp"
+            android:background="@drawable/with_card"
+            android:onClick="onClickPrivilege" />
+
+        <ImageView
+            android:id="@+id/imgV_withexch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/with_exch"
+            android:onClick="onClickPrivilege" />
+    </LinearLayout>
+</LinearLayout>
+
+
+</RelativeLayout>

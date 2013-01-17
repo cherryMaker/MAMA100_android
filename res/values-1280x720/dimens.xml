@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    
+    
+    <!-- homePage-->
+    <dimen name="home_act_pager_hei">391dp</dimen>
+    <dimen name="idx_container_hei">340dip</dimen>
+    
+
+    <dimen name="hollow_frame">68dip</dimen>
+    <dimen name="homepage_avatar">57dip</dimen>
+    
+    <!-- SettingHome -->
+    <dimen name="set_tab3_margin_top">43dip</dimen>
+    <dimen name="set_tab4_margin_top">86dip</dimen>
+    <dimen name="set_cancelbtn_margin_top">92dip</dimen>
+    
+        <!--share_home -->
+    <dimen name="photo_size">333dip</dimen>
+    <dimen name="photo_hollow_size">340dip</dimen>
+    
+
+ 
+    
+    
+     <!--card_home -->
+    <dimen name="reg_card_width">340dip</dimen>
+    <dimen name="reg_card_height">223dip</dimen>
+    
+    <dimen name="tv_expire_margin_left">164dp</dimen>
+    <dimen name="tv_expire_margin_top">21dp</dimen>
+    
+    
+    
+ 	<!-- 1.36版本  适配        added by liyang     START -->
+    <!-- 自助积分页面  默认布局-->
+ 	<dimen name="reg_card_bg_height">350dip</dimen>
+    <dimen name="reg_card_mid_btn_1">325dip</dimen>
+    <dimen name="reg_card_mid_btn_2">332dip</dimen>    
+    
+    <!-- 1.36版本  适配        added by liyang     END -->
+</resources>

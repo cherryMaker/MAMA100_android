@@ -1,0 +1,490 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/reg_card_bg_height"
+            android:background="@drawable/reg_card_bg" >
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent" >
+
+                <RelativeLayout
+                    android:id="@+id/lay_reverse"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true" >
+
+                    <ImageView
+                        android:id="@+id/imgV_reverse"
+                        android:layout_width="@dimen/reg_card_width"
+                        android:layout_height="@dimen/reg_card_height"
+                        android:layout_centerHorizontal="true"
+                        android:background="@drawable/reg_card_reverse"
+                        android:clickable="true"
+                        android:focusable="true"
+                        android:visibility="invisible" />
+
+                    <RelativeLayout
+                        android:id="@+id/layout_remake"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignLeft="@id/imgV_reverse"
+                        android:layout_alignRight="@id/imgV_reverse"
+                        android:layout_centerVertical="true"
+                        android:paddingTop="42dp"
+                        android:visibility="visible" >
+
+                        <TextView
+                            android:id="@+id/TextView02"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentLeft="true"
+                            android:layout_marginLeft="28dp"
+                            android:text="@string/reg_code"
+                            android:textColor="#336699"
+                            android:textSize="12sp"
+                            android:textStyle="bold"
+                            android:typeface="serif" />
+
+                        <Button
+                            android:id="@+id/btn_remake"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/TextView02"
+                            android:layout_centerInParent="true"
+                            android:layout_marginTop="14dp"
+                            android:background="@drawable/selector_dialog_btn"
+                            android:paddingLeft="40dp"
+                            android:paddingRight="40dp"
+                            android:text="@string/reg_code_remake"
+                            android:textColor="@color/white"
+                            android:textSize="14sp"
+                            android:visibility="invisible" />
+
+                        <TextView
+                            android:id="@+id/tv_regcode"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/TextView02"
+                            android:layout_centerInParent="true"
+                            android:paddingLeft="16dp"
+                            android:paddingRight="16dp"
+                            android:textColor="#4d4d4d"
+                            android:textSize="48sp"
+                            android:textStyle="bold"
+                            android:typeface="serif" />
+
+                        <TextView
+                            android:id="@+id/tv_second"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_below="@id/tv_regcode"
+                            android:layout_marginRight="28dp"
+                            android:layout_marginTop="@dimen/tv_second_margin_top"
+                            android:text="秒"
+                            android:textColor="#336699"
+                            android:textSize="12sp"
+                            android:textStyle="bold"
+                            android:typeface="serif" />
+
+                        <TextView
+                            android:id="@+id/tv_counting"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignTop="@id/tv_second"
+                            android:layout_below="@id/tv_regcode"
+                            android:layout_toLeftOf="@+id/tv_second"
+                            android:text="120"
+                            android:textColor="#336699"
+                            android:textSize="12sp"
+                            android:textStyle="bold"
+                            android:typeface="serif" />
+
+                        <TextView
+                            android:id="@+id/tv_expire"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignTop="@id/tv_second"
+                            android:layout_below="@id/tv_regcode"
+                            android:layout_marginRight="5dip"
+                            android:layout_toLeftOf="@+id/tv_counting"
+                            android:text="@string/reg_code_expire"
+                            android:textColor="#336699"
+                            android:textSize="12sp"
+                            android:textStyle="bold"
+                            android:typeface="serif" />
+                    </RelativeLayout>
+
+                    <LinearLayout
+                        android:id="@+id/layout_used"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        android:visibility="gone" >
+
+                        <TextView
+                            android:id="@+id/textView3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="26dp"
+                            android:text="@string/reg_code_used"
+                            android:textColor="#336699"
+                            android:textSize="18sp"
+                            android:textStyle="bold"
+                            android:typeface="serif" />
+
+                        <Button
+                            android:id="@+id/btn_hasused"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="12dp"
+                            android:background="@drawable/selector_dialog_btn"
+                            android:paddingLeft="60dp"
+                            android:paddingRight="60dp"
+                            android:text="确   定"
+                            android:textColor="@color/white"
+                            android:textSize="18sp" />
+                    </LinearLayout>
+                    
+                    
+                     <LinearLayout
+                        android:id="@+id/layout_unlogin"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        android:visibility="gone" >
+
+                        <TextView
+	                        android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+	                        android:paddingTop="20dp"
+	                        android:text="@string/reg_code_un_login1"
+	                        android:textColor="#336699"
+	                        android:textSize="14sp"
+	                        android:textStyle="bold"
+	                        android:typeface="serif"
+	                        />
+                        
+                        
+                         <TextView
+	                        android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+	                        android:paddingTop="10dp"
+	                        android:text="@string/reg_code_un_login2"
+	                        android:textColor="#336699"
+	                        android:textSize="14sp"
+	                        android:textStyle="bold"
+	                        android:typeface="serif"
+	                        />
+                    </LinearLayout>
+                    
+                     
+                     <LinearLayout
+                        android:id="@+id/layout_unOpen"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                      	android:layout_alignLeft="@id/imgV_reverse"
+	                    android:layout_alignRight="@id/imgV_reverse"
+                        android:orientation="vertical"
+                        android:visibility="gone" >
+
+                        <TextView
+	                        android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:lineSpacingExtra="8dip"
+                            android:gravity="center"
+                            android:paddingLeft="15dip"
+                            android:paddingRight="15dip"
+	                        android:paddingTop="20dp"
+	                        android:text="@string/reg_code_un_open1"
+	                        android:textColor="#336699"
+	                        android:textSize="14sp"
+	                        android:textStyle="bold"
+	                        android:typeface="serif"
+	                        />
+                    </LinearLayout>
+                    
+
+                    <LinearLayout
+                        android:id="@+id/layout_loading"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_centerVertical="true"
+                        android:gravity="center"
+                        android:paddingTop="22dp" >
+
+                        <ProgressBar
+                            android:id="@+id/progressBar1"
+                            style="?android:attr/progressBarStyleSmall"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:indeterminateDrawable="@anim/cycle_loading_anim"
+                            android:minHeight="32dp"
+                            android:minWidth="32dp" />
+
+                        <TextView
+                            android:id="@+id/textView2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:text="@string/glb_message_auto_loading2"
+                            android:textColor="#4d4d4d"
+                            android:textSize="15sp" />
+                    </LinearLayout>
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/lay_front"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true" >
+
+                    <ImageView
+                        android:id="@+id/imgV_front"
+                        android:layout_width="@dimen/reg_card_width"
+                        android:layout_height="@dimen/reg_card_height"
+                        android:layout_centerInParent="true"
+                        android:background="@drawable/reg_card_front"
+                        android:clickable="true"
+                        android:focusable="true" />
+
+                    <ImageView
+                        android:id="@+id/imgV_target"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignRight="@id/imgV_front"
+                        android:layout_alignTop="@id/imgV_front"
+                        android:layout_marginRight="15dp"
+                        android:layout_marginTop="15dp"
+                        android:background="@drawable/target" />
+
+                    <ImageView
+                        android:id="@+id/imgV_hand"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignRight="@id/imgV_front"
+                        android:layout_alignTop="@id/imgV_front"
+                        android:layout_marginRight="-10dp"
+                        android:layout_marginTop="25dp"
+                        android:background="@drawable/hand" />
+
+                    <ImageView
+                        android:id="@+id/imgV_perform_ex"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignLeft="@+id/imgV_target"
+                        android:layout_below="@id/imgV_target"
+                        android:layout_marginLeft="16dp"
+                        android:layout_marginTop="24dp"
+                        android:background="@drawable/tv_perform_ex" />
+                </RelativeLayout>
+            </RelativeLayout>
+        </LinearLayout>
+
+        <!-- 显示立即登录视图 -->
+
+        <LinearLayout
+            android:id="@+id/loginLayout"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="@drawable/regpoint_home_bg"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:visibility="gone" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="40dp"
+                android:text="@string/regpoint_shop_tips_3"
+                android:textColor="@color/regpoint_tips_color_1"
+                android:textSize="16dip" />
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:gravity="center"
+                android:lines="2"
+                android:text="@string/regpoint_shop_tips_4"
+                android:textColor="@color/regpoint_tips_color_2"
+                android:textSize="16dip"
+                android:lineSpacingExtra="5dp"  
+                />
+        </LinearLayout>
+
+        <!-- 显示立即开通视图 -->
+
+        <LinearLayout
+            android:id="@+id/openLayout"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="@drawable/regpoint_home_bg"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:visibility="gone" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="40dp"
+                android:text="@string/regpoint_shop_tips_8"
+                android:textColor="@color/regpoint_tips_color_1"
+                android:textSize="16dip" />
+
+            <TextView
+                android:id="@+id/regpointTips"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:gravity="center"
+                android:textColor="@color/regpoint_tips_color_2"
+                android:textSize="16dip"
+                android:lineSpacingExtra="5dp" 
+                android:lines="2"/>
+        </LinearLayout>
+
+        <!-- 显示自助积分的视图 -->
+
+        <LinearLayout
+            android:id="@+id/regpointLayout"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="@drawable/regpoint_home_bg"
+            android:gravity="center" >
+
+            <RelativeLayout
+                android:id="@+id/relativeLayout1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" >
+
+                <ImageView
+                    android:id="@+id/imgV_avatar"
+                    android:layout_width="66dp"
+                    android:layout_height="66dp"
+                    android:layout_centerInParent="true"
+                    android:src="@drawable/default_avatar" />
+
+                <ImageView
+                    android:id="@+id/imgV_hollow"
+                    android:layout_width="78dp"
+                    android:layout_height="74dp"
+                    android:layout_centerInParent="true"
+                    android:background="@drawable/reg_home_avatar_hollow" />
+            </RelativeLayout>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:src="@drawable/regpoint_home_divider" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/tv_nick"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="宝贝靓妈咪"
+                    android:textColor="@color/regpoint_tips_color_3"
+                    android:textSize="16dip" />
+
+                <TextView
+                    android:id="@+id/tv_account"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:singleLine="true"
+                    android:text="会员账号:15919648756"
+                    android:textSize="16dip" />
+
+                <TextView
+                    android:id="@+id/tv_point"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:singleLine="true"
+                    android:text="会员账号:15919648756"
+                    android:textSize="16dip" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <!-- 显示立即登录按钮 -->
+
+    <ImageView
+        android:id="@+id/loginBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/reg_card_mid_btn_1"
+        android:src="@drawable/selector_regpoint_home_login" />
+
+    <!-- 显示立即开通按钮 -->
+
+    <ImageView
+        android:id="@+id/openRegpointBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/reg_card_mid_btn_1"
+        android:src="@drawable/selector_regpoint_home_open"
+        android:visibility="gone" />
+
+    <!-- 显示自助积分按钮、积分记录按钮 -->
+
+    <LinearLayout
+        android:id="@+id/regpointHomeBtnLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/reg_card_mid_btn_2"
+        android:visibility="gone" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center" >
+
+            <Button
+                android:id="@+id/btn_reg_diy"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/selector_regpoint_home_btn"
+                android:text="@string/regpoint_title" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center" >
+
+            <Button
+                android:id="@+id/btn_reg_his"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/selector_regpoint_home_btn"
+                android:text="@string/reg_history" />
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingTop="15dp" >
+
+      
+
+        <!-- ****************************************************** -->
+        <!-- ******************** 微博两种绑定 ********************** -->
+        <!-- ******************************************************* -->
+
+        <LinearLayout
+            android:id="@+id/layout_sina_weibo_bind_status"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/setting_tab_selector"
+            android:clickable="true"
+            android:focusable="true"
+            android:orientation="horizontal" >
+
+
+            <TextView
+                android:id="@+id/sina_weibo_bind_status"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/weibo_sina"
+                android:gravity="center_vertical"
+                android:textColor="@color/btn_text_color"
+                android:textSize="16dp" 
+                android:drawableLeft="@drawable/small_sina_weibo_icon"
+               />
+            
+                  
+             <TextView
+                android:id="@+id/tv_authstate_sina"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/make_auth"
+                android:gravity="right"
+                android:textSize="16dp" 
+               	android:drawableRight="@drawable/selector_rightarrow"
+                />
+           
+         
+        </LinearLayout>
+    </LinearLayout>
+
+</ScrollView>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    
+    
+    <!-- homePage  适用 480*320等-->
+    <!-- 480/854*Xdip  X指在800*480设备上的值-->
+    <dimen name="home_act_pager_hei">340dp</dimen>
+    <dimen name="idx_container_hei">200dip</dimen>
+    
+
+    <dimen name="hollow_frame">72dip</dimen>
+    <dimen name="homepage_avatar">58dip</dimen>
+    
+         <!-- SettingHome -->
+    <dimen name="set_tab3_margin_top">43dip</dimen>
+    <dimen name="set_tab4_margin_top">86dip</dimen>
+    <dimen name="set_cancelbtn_margin_top">38dip</dimen>
+    
+        <!--share_home -->
+    <dimen name="photo_size">293dip</dimen>
+    <dimen name="photo_hollow_size">300dip</dimen>
+    
+    
+        <!--card_home -->
+    <dimen name="reg_card_width">298dip</dimen>
+    <dimen name="reg_card_height">196dip</dimen>
+    
+   	<!-- 1.36版本  适配        added by liyang     START -->
+    <!-- 自助积分页面-->
+    <dimen name="reg_card_bg_height">275dp</dimen>
+    <dimen name="reg_card_mid_btn_1">250dp</dimen>
+    <dimen name="reg_card_mid_btn_2">257dp</dimen>
+    
+    <!-- 1.36版本  适配        added by liyang     END -->
+</resources>

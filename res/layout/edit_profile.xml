@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:editTextEx="http://schemas.android.com/apk/res/com.mama100.android.member"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <LinearLayout
+        android:id="@+id/background"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="vertical"
+            android:paddingLeft="14dp"
+            android:paddingRight="14dp" >
+
+            <LinearLayout
+                android:id="@+id/layout_main"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <!-- 用户个人头像 栏 - START -->
+
+                <RelativeLayout
+                    android:id="@+id/layout_img_bg"
+                    android:layout_width="fill_parent"
+                    android:layout_height="176dp"
+                    android:background="@drawable/profile_bg" >
+
+                    <RelativeLayout
+                        android:id="@+id/combine_avatar"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="34dp" >
+
+                        <ImageView
+                            android:id="@+id/imgV_face"
+                            android:layout_width="93dp"
+                            android:layout_height="93dp"
+                            android:layout_centerInParent="true"
+                            android:clickable="true"
+                            android:focusable="true"
+                            android:orientation="vertical"
+                            android:src="@drawable/default_avatar" />
+
+                        <ImageView
+                            android:id="@+id/hollow_avatar"
+                            android:layout_width="95dp"
+                            android:layout_height="95dp"
+                            android:layout_centerInParent="true"
+                            android:background="@drawable/profile_avatar_hollow" />
+
+                        <ImageButton
+                            android:id="@+id/edit_avatar"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignBottom="@+id/hollow_avatar"
+                            android:layout_alignRight="@+id/hollow_avatar"
+                            android:background="@drawable/selector_profile_editbtn" />
+                    </RelativeLayout>
+
+                    <TextView
+                        android:id="@+id/tv_acc_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/combine_avatar"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="10dp"
+                        android:clickable="false"
+                        android:focusable="true"
+                        android:focusableInTouchMode="true"
+                        android:textColor="@color/white"
+                        android:textSize="16dp" />
+                </RelativeLayout>
+
+                <!-- 用户个人头像 栏 - END -->
+
+
+                <!-- 用户个人昵称 - START -->
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="18dp"
+                    android:background="@drawable/setting_tab_selector" >
+
+                    <TextView
+                        android:id="@+id/register_pwd1_tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:paddingBottom="5dp"
+                        android:paddingLeft="10dp"
+                        android:paddingRight="2dp"
+                        android:paddingTop="5dp"
+                        android:text="@string/nick_name"
+                        android:textColor="#000000"
+                        android:textSize="@dimen/control_font_size" />
+
+                    <EditText
+                        android:id="@+id/edt_nickname"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="left|center_vertical"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_weight="2"
+                        android:background="@null"
+                        android:hint="@string/input_nickname_tip"
+                        android:maxLength="18"
+                        android:textSize="@dimen/control_font_size" >
+                    </EditText>
+                </LinearLayout>
+                <!-- 用户个人昵称 - END -->
+
+                <LinearLayout
+                    android:id="@+id/layout_manage_address"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:background="@drawable/setting_tab_selector"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:id="@+id/manage_address"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:drawableRight="@drawable/selector_rightarrow"
+                        android:gravity="center_vertical"
+                        android:paddingBottom="5dp"
+                        android:paddingLeft="7dp"
+                        android:paddingRight="3dp"
+                        android:paddingTop="5dp"
+                        android:text="@string/manage_receiver_address"
+                        android:textColor="@color/btn_text_color"
+                        android:textSize="16dp" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <!-- 宝宝信息栏 - START -->
+
+            <RelativeLayout
+                android:id="@+id/baby_info_title"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:gravity="center" >
+
+                <TextView
+                    android:id="@+id/baby_info_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:hint="@string/baby_info" />
+
+                <ImageView
+                    android:id="@+id/ImageView01"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_toLeftOf="@id/baby_info_tv"
+                    android:background="@drawable/dotted_line" />
+
+                <ImageView
+                    android:id="@+id/ImageView02"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_toRightOf="@id/baby_info_tv"
+                    android:background="@drawable/dotted_line" />
+            </RelativeLayout>
+
+            <!-- 动态添加宝宝信息 -->
+
+            <LinearLayout
+                android:id="@+id/baby_info_content"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:orientation="vertical" />
+
+            <!-- 宝宝信息栏 - END -->
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/submit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/selector_save"
+            android:onClick="clicksubmit"
+         />
+    </LinearLayout>
+
+</ScrollView>

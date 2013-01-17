@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:editTextEx="http://schemas.android.com/apk/res/com.mama100.android.member"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="10dip"
+    android:paddingLeft="10dip"
+    android:paddingRight="10dip"
+    android:paddingTop="20dip" 
+    android:orientation="vertical" >
+
+    
+    <TextView
+        android:layout_gravity="left"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="@string/tips_input_cellphone2"
+        />
+    
+    <com.mama100.android.member.widget.EditTextEx
+        android:id="@+id/input_cell_phone"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center_horizontal"
+        editTextEx:hint_text="@string/lookfor_pwd_phone3_hint"
+        editTextEx:max_length="11"
+        editTextEx:tip_text="@string/lookfor_pwd_phone3"
+        android:layout_marginTop="10dp" />
+
+    <Button
+        android:id="@+id/send_wait"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dip"
+        android:background="@drawable/bt_getpwd_wait"
+        android:gravity="center_vertical"
+        android:paddingLeft="55dip"
+        android:text=""
+        android:textColor="#001111"
+        android:visibility="gone" />
+
+    
+    
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dip"
+        android:gravity="right" >
+
+        <Button
+            android:id="@+id/send_cell_phone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/selector_submit2"
+            />
+    </LinearLayout>
+</LinearLayout>

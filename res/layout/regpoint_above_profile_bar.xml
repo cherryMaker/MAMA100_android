@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="88dp"
+    android:background="@drawable/msg_bg_no_dash"
+    android:orientation="horizontal" >
+
+     <RelativeLayout 
+        android:id="@+id/combine_avatar"
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        >
+    <ImageView
+        android:id="@+id/regpoint_avatar"
+        android:layout_width="59dp"
+        android:layout_centerInParent="true"
+        android:src="@drawable/default_avatar"
+        android:layout_height="59dp"
+        android:clickable="true" android:focusable="true"/>
+    
+    <ImageView
+        android:id="@+id/hollow_frame"
+        android:layout_width="67dp"
+        android:layout_centerInParent="true"
+        android:layout_height="67dp"
+        android:background="@drawable/homepage_avatar_hollow"/>
+
+    </RelativeLayout>
+        
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:layout_weight="0.95"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/account"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="7dp"
+            android:paddingBottom="4dp"
+            android:singleLine="true"
+            android:textSize="@dimen/control_font_size"
+            />
+
+        <TextView
+            android:id="@+id/regbalance"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:singleLine="true"
+            android:textSize="@dimen/control_font_size" android:layout_marginTop="6dp"/>
+
+    </LinearLayout>
+
+    <ImageButton
+        android:id="@+id/reg_diy"
+        android:layout_marginTop="3dip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/selector_reg_diy" android:visibility="invisible"/>
+
+</LinearLayout>

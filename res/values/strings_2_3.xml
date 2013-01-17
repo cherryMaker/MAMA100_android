@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="baby_shop">母婴店</string>
+    <string name="map_view">地图</string>
+    
+    
+    <string name="near_bbshop">附近的母婴店</string>
+    <string name="concerned_bbshop">关注的母婴店</string>
+    <string name="my_latest_pur_history">我最近的订单</string>
+    
+    <string name="support_ele_card">支持POS机及电子会员卡</string>
+    <string name="support_exchange">支持合生元积分兑换</string>
+    <string name="biostime_vip_shop">合生元Vip会员门店</string>
+    
+    <string name="lookup_shop_desc">查看门店简介</string>
+    <string name="shop_desc">门店简介</string>
+    <string name="get_loc_error_tip">无法获取您的位置，请稍候再试~</string>
+    <string name="no_loc_data_tip">抱歉，未能获取门店的地图位置</string>
+    <string name="load_near_more">点击加载更多</string>
+    <string name="load_near_done">亲，列表已经加载完了 ^_^</string>
+    <string name="load_near_failed">加载列表异常了，稍候再试试吧</string>
+</resources>

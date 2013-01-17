@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    
+    
+
+    <!-- 控件字体大小 -->
+    <dimen name="control_font_size1">14sp</dimen>
+    <dimen name="control_font_size">16sp</dimen>
+    <dimen name="control_font_size2">22sp</dimen>
+
+    <!-- 底部提交按钮 -->
+    <dimen name="commit_button_margin_top">7dip</dimen>
+    <dimen name="commit_button_margin_bottom">11dip</dimen>
+    
+    <!-- homePage -->
+    <!--800*480 -->
+    <dimen name="home_act_pager_hei">340dp</dimen>
+    <dimen name="idx_container_hei">252dip</dimen>
+    
+    <dimen name="hollow_frame">72dip</dimen>
+    <dimen name="homepage_avatar">57dip</dimen>
+    
+    <!-- SettingHome -->
+    <dimen name="set_tab3_margin_top">44dip</dimen>
+    <dimen name="set_tab4_margin_top">88dip</dimen>
+    <dimen name="set_cancelbtn_margin_top">42dip</dimen>
+    
+    <!--share_home -->
+    <dimen name="photo_size">293dip</dimen>
+    <dimen name="photo_hollow_size">300dip</dimen>
+    
+    
+        <!--card_home -->
+    <dimen name="reg_card_width">298dip</dimen>
+    <dimen name="reg_card_height">196dip</dimen>
+    
+    
+    <!-- 1.36版本  适配        added by liyang     START -->
+    <!-- 自助积分页面-->
+ 	<dimen name="reg_card_bg_height">300dip</dimen>
+    <dimen name="reg_card_mid_btn_1">275dip</dimen>
+    <dimen name="reg_card_mid_btn_2">282dip</dimen>   
+    
+    <!-- 1.36版本  适配        added by liyang     END -->
+   
+</resources>

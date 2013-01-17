@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:editTextEx="http://schemas.android.com/apk/res/com.mama100.android.member"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="10dip"
+    android:paddingLeft="10dip"
+    android:paddingRight="10dip"
+    android:paddingTop="20dip" 
+    android:orientation="vertical" >
+
+    <com.mama100.android.member.widget.EditTextEx
+        android:id="@+id/input_new_pwd1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dip"
+        editTextEx:hint_text="@string/input_pwd_hint"
+        editTextEx:max_length="18"
+        editTextEx:tip_text="@string/new_pwd" >
+    </com.mama100.android.member.widget.EditTextEx>
+
+
+    <com.mama100.android.member.widget.EditTextEx
+        android:id="@+id/input_new_pwd2"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dip"
+        editTextEx:hint_text="@string/input_pwd_hint"
+        editTextEx:max_length="18"
+        editTextEx:tip_text="@string/new_pwd2" >
+
+    </com.mama100.android.member.widget.EditTextEx>
+
+    <CheckBox
+        android:id="@+id/check_box_show_pwd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="24dp"
+        android:paddingLeft="20dp"
+        android:button="@drawable/selector_checkbox"
+        android:text="@string/show_pwd"
+        android:textColor="@color/edittext_head_color" />
+    
+         <Button
+            android:id="@+id/send_new_pwd"
+            android:layout_width="wrap_content"
+            android:layout_marginTop="20dip"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/selector_getpwd_submit"
+            android:gravity="center_horizontal" />
+
+</LinearLayout>

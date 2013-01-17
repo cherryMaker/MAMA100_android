@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resources>
+    <color name="list_selector_focus_color">#ffc8ee9b</color>
+    <color name="biostime_tab_color_focus">#ff4d7900</color>
+    <color name="biostime_tab_color">#ff6a6a6a</color>
+    <color name="question_item_title_color">#ff505050</color>
+    <color name="question_list_bg_color">#fff9f9f9</color>
+    <color name="question_item_content_color">#ff838282</color>
+    <color name="question_item_content_alarm_color">#ffd7a10e</color>
+    <color name="question_item_bg_color">#fff8f8f8</color>
+    <color name="refresh_text_color">#ffb18716</color>
+    <color name="bubble_dark_background">#b2191919</color>
+    <color name="related_item_title_color">#ff393939</color>
+    <color name="related_item_abstract_color">#ff656565</color>
+    <color name="qb_content_color">#ff545554</color>
+    <color name="qb_content_shadow_color">#fffcfcfc</color>
+    <color name="qb_title_shadow_color">#ffdae9b0</color>
+    <color name="qb_title_color">#ff3e3e3e</color>
+    <color name="qb_tip_color">#ffbdd284</color>
+    <color name="qb_name_color">#ff4d4d4d</color>
+    <color name="qb_score_color">#ff9a9a9a</color>
+    <color name="content_tip_uninput_color">#ffff4848</color>
+    <color name="content_tip_color">#ffcbcccd</color>
+    <color name="answer_record_item_title">#ff505050</color>
+    <color name="answer_record_item_date">#ff9b9b9b</color>
+    <color name="answer_record_list_bg_color">#fff9f9f9</color>
+    <color name="about_color">#ff929292</color>
+    <color name="title_bar_shadow_color">#ff628500</color>
+    <color name="text_color">#ff6a6a6a</color>
+    <color name="text_clicked_color">#ff4c6800</color>
+    <color name="text_disable_color">#ff505050</color>
+    <color name="agreement_tip_color">#ff808181</color>
+    <color name="agreement_color">#ff5a7900</color>
+    <color name="text_shadow_color">#ffffffff</color>
+    <color name="input_text_color">#ff4e4e4e</color>
+    <color name="input_hint_color">#ffc2c1c1</color>
+    <color name="btn_text_color">#ff505050</color>
+    <color name="tip_text_color">#ffd7a10e</color>
+    <color name="disable_edit_color">#33000000</color>
+    <color name="search_hint_text">#ff696969</color>
+    <color name="search_result_title">#ff466d00</color>
+    <color name="search_result_tag">#ff393939</color>
+    <color name="search_result_summary">#ff656565</color>
+    <color name="search_footer_buttons">#ff505050</color>
+    <color name="search_list_bg_color">#fff9f9f9</color>
+    
+    
+    
+    <color name="login_label_color">#000000</color>
+    <color name="homepage_module_label_color">#000000</color>
+    <color name="homepage_identity_bar_label_color">#064672</color>
+    
+    <!-- 进度查询界面 -->
+    <color name="progress_inquiry_bar_label_color">#8CC63F</color>
+    <color name="progress_inquiry_done_content_bar_label_color">#0F9400</color>
+    <color name="progress_inquiry_wait_content_bar_label_color">#D74300</color>
+    <color name="progress_inquiry_undo_content_bar_label_color">#8C6239</color>
+    
+    <!-- 主界面 -->
+    <color name="main_page_grid_selector_color">#29abe2</color>
+    
+    
+    
+    <color name="login_page_label_color">#125a95</color>
+    
+    <!-- 文字title阴影，摘自path软件 -->
+    <color name="qa_bar_text_shadow">#ff7f1a13</color>
+    
+    
+    
+    
+    <color name="edittext_head_color">#808080</color>
+    <color name="edittext_hint_color">#cccccc</color>
+    
+    
+    <!-- 自助积分界面使用到的颜色值 -->
+    <color name="regpoint_tips_color_1">#919190</color>
+    <color name="regpoint_tips_color_2">#9FACC1</color>
+    <color name="regpoint_tips_color_3">#666666</color>
+</resources>

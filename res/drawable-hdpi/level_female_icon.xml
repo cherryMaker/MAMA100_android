@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<level-list xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <item
+        android:drawable="@drawable/bt_female"
+        android:maxLevel="5"
+        android:minLevel="0"
+        />
+    
+    <item
+        android:drawable="@drawable/bt_female_on"
+        android:maxLevel="10"
+        android:minLevel="6"
+        
+        />
+
+</level-list>

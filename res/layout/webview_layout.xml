@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical">
+
+    <android.webkit.WebView
+        android:id="@+id/webV_view"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" android:layout_centerHorizontal="true" 
+  android:scrollbarAlwaysDrawVerticalTrack="false" 
+  android:scrollbarAlwaysDrawHorizontalTrack="false" 
+  >
+    </android.webkit.WebView>
+
+    <ProgressBar
+        android:id="@+id/proBar_loading"
+        style="?android:attr/progressBarStyleSmall"
+            android:indeterminateDrawable="@anim/cycle_loading_anim"
+    android:interpolator="@android:anim/linear_interpolator"
+        android:layout_width="wrap_content"
+         android:minWidth="32dp" android:minHeight="32dp" 
+         android:layout_marginTop="90dp" 
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true" />
+
+</RelativeLayout>

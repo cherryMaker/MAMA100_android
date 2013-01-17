@@ -1,0 +1,318 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:clickable="false" >
+
+    <com.mama100.android.member.widget.HideLinearLayout
+        android:id="@+id/background"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingLeft="15dip"
+            android:paddingRight="15dip" >
+
+            <LinearLayout
+                android:id="@+id/view1"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_centerHorizontal="true"
+                android:orientation="vertical"
+                android:paddingTop="20dip" >
+
+                <!-- ********************************************* -->
+                <!-- ***********登录框 Start, 留待以后优化********** -->
+                <!-- ********************************************* -->
+
+                <LinearLayout
+                    android:id="@+id/above"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/multiple_row_above" >
+
+                    <TextView
+                        android:id="@+id/login_account_tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:paddingLeft="20dp"
+                        android:paddingRight="2dp"
+                        android:text="@string/login_tv_account2"
+                        android:textColor="#000000"
+                        android:textSize="@dimen/control_font_size" />
+
+                    <EditText
+                        android:id="@+id/login_account"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginRight="10dp"
+                        android:layout_weight="2"
+                        android:background="@null"
+                        android:hint="@string/login2"
+                        android:singleLine="true"
+                        android:maxLength="50"
+                        android:nextFocusDown="@+id/login_password"
+                        android:textSize="@dimen/control_font_size" >
+                    </EditText>
+                </LinearLayout>
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="0.1dp"
+                    android:layout_marginLeft="0.8dp"
+                    android:layout_marginRight="0.8dp"
+                    android:background="@drawable/multiple_row_seperator" />
+
+                <LinearLayout
+                    android:id="@+id/below"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/multiple_row_below" >
+
+                    <TextView
+                        android:id="@+id/textView1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:paddingLeft="20dp"
+                        android:paddingRight="2dp"
+                        android:text="@string/login_tv_password2"
+                        android:textColor="#000000"
+                        android:textSize="@dimen/control_font_size" />
+
+                    <EditText
+                        android:id="@+id/login_password"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginRight="10dp"
+                        android:layout_weight="2"
+                        android:background="@null"
+                        android:maxLength="18"
+                        android:hint="@string/account_login_input_pwd_hint"
+                        android:nextFocusUp="@+id/login_account"
+                        android:textSize="@dimen/control_font_size" >
+                    </EditText>
+                </LinearLayout>
+
+                <!-- ******************************************* -->
+                <!-- ***********登录框 End, 留待以后优化********** -->
+                <!-- ******************************************* -->
+
+                <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginTop="10dp" >
+
+                    <CheckBox
+                        android:id="@+id/isShow"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="true"
+                        android:button="@drawable/selector_checkbox"
+                        android:paddingLeft="20dip"
+                        android:text="@string/show_pwd"
+                        android:textSize="16dip"
+                        android:textColor="@color/edittext_head_color" />
+
+                    <TextView
+                        android:id="@+id/lookfor_pwd"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:text="@string/login_tv_lookfor_pwd"
+                        android:textSize="16dip"
+                        android:textColor="#ff6600" />
+                </RelativeLayout>
+
+                <ImageButton
+                    android:id="@+id/btn_login"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/selector_login_l"
+                    android:onClick="clicklogin" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/view2"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/view1"
+                android:layout_marginTop="16dp"
+                android:orientation="vertical" >
+
+                <!-- 中间虚线栏：可以用以下帐号登录 -->
+
+                <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:gravity="center" >
+
+                    <TextView
+                        android:id="@+id/baby_info_title"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:paddingLeft="10dp"
+                        android:paddingRight="10dp"
+                        android:hint="@string/third_party_login_label" />
+
+                    <ImageView
+                        android:id="@+id/ImageView01"
+                        android:layout_width="60dp"
+                        android:layout_height="1dp"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="true"
+                        android:background="@drawable/dotted_line" />
+
+                    <ImageView
+                        android:id="@+id/ImageView01"
+                        android:layout_width="60dp"
+                        android:layout_height="1dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:background="@drawable/dotted_line" />
+                </RelativeLayout>
+
+                <!-- **************************************************** -->
+                <!-- *************      三个登录的 入口       ***************** -->
+                <!-- **************************************************** -->
+
+                <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginTop="14dp" >
+
+                    <!-- 1 -->
+
+                    <LinearLayout
+                        android:id="@+id/qq_account_login"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/multiple_row_above"
+                        android:clickable="true"
+                        android:focusable="true"
+                        android:orientation="horizontal"
+                        android:paddingBottom="4dp"
+                        android:paddingTop="4dp" >
+
+                        <TextView
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:drawableLeft="@drawable/qq_login_icon"
+                            android:drawablePadding="10dp"
+                            android:drawableRight="@drawable/selector_rightarrow"
+                            android:gravity="center_vertical"
+                            android:paddingBottom="7dp"
+                            android:paddingLeft="20dp"
+                            android:paddingRight="13dp"
+                            android:paddingTop="7dp"
+                            android:text="@string/login_with_qq_account"
+                            android:textColor="@color/btn_text_color"
+                            android:textSize="16dp" />
+                    </LinearLayout>
+                    
+                     <View
+                         android:id="@+id/seprator_1"
+                    android:layout_width="fill_parent"
+                    android:layout_height="0.1dp"
+                    android:layout_below="@+id/qq_account_login"
+                    
+                    android:layout_marginLeft="0.8dp"
+                    android:layout_marginRight="0.8dp"
+                    android:background="@drawable/multiple_row_seperator" />
+
+                    <!-- 2 -->
+
+                    <LinearLayout
+                        android:id="@+id/sina_weibo_account_login"
+                        android:layout_below="@+id/seprator_1"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/multiple_row_middle"
+                        android:clickable="true"
+                        android:focusable="true"
+                        android:orientation="horizontal"
+                        android:paddingBottom="4dp"
+                        android:paddingTop="4dp" >
+
+                        <TextView
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:drawableLeft="@drawable/sina_weibo_login_icon"
+                            android:drawablePadding="10dp"
+                            android:drawableRight="@drawable/selector_rightarrow"
+                            android:gravity="center_vertical"
+                            android:paddingBottom="7dp"
+                            android:paddingLeft="20dp"
+                            android:paddingRight="13dp"
+                            android:paddingTop="7dp"
+                            android:text="@string/login_with_sina_weibo_account"
+                            android:textColor="@color/btn_text_color"
+                            android:textSize="16dp" />
+                    </LinearLayout>
+                    
+                     <View
+                              android:id="@+id/seprator_2"
+                              android:layout_below="@+id/sina_weibo_account_login"
+                    android:layout_width="fill_parent"
+                    android:layout_height="0.1dp"
+                    android:layout_marginLeft="0.8dp"
+                    android:layout_marginRight="0.8dp"
+                    android:background="@drawable/multiple_row_seperator" />
+
+                    <!-- 3 -->
+
+                    <LinearLayout
+                        android:id="@+id/member_phone_login"
+                        android:layout_below="@+id/seprator_2"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/multiple_row_below"
+                        android:clickable="true"
+                        android:focusable="true"
+                        android:orientation="horizontal"
+                        android:paddingBottom="4dp"
+                        android:paddingTop="4dp" >
+
+                        <TextView
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:drawableLeft="@drawable/crm_phone_login_icon"
+                            android:drawablePadding="10dp"
+                            android:drawableRight="@drawable/selector_rightarrow"
+                            android:gravity="center_vertical"
+                            android:paddingBottom="8dp"
+                            android:paddingLeft="20dp"
+                            android:paddingRight="13dp"
+                            android:paddingTop="6dp"
+                            android:text="@string/login_with_member_phone"
+                            android:textColor="@color/btn_text_color"
+                            android:textSize="16dp" />
+                    </LinearLayout>
+                </RelativeLayout>
+            </LinearLayout>
+        </RelativeLayout>
+        
+        <TextView
+            android:layout_width="fill_parent" 
+            android:layout_height="50dp"
+            android:text="底部间隔"
+            android:visibility="invisible"
+            />
+    </com.mama100.android.member.widget.HideLinearLayout>
+
+</ScrollView>

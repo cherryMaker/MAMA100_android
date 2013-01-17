@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:editTextEx="http://schemas.android.com/apk/res/com.mama100.android.member"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+
+
+
+
+
+
+
+
+    <TextView
+        android:id="@+id/pagetwo_tv_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/regpoint_bg"
+        android:gravity="center_vertical"
+        android:layout_marginTop="20dp"
+        android:text="@string/regpoint_4"
+        android:textColor="@color/black"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dip"
+        android:text="@string/regpoint_5" />
+
+        <com.mama100.android.member.widget.EditTextEx
+            android:id="@+id/shop_code"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dip"
+            editTextEx:hint_text="@string/regpoint_hint3"
+            editTextEx:max_length="6"
+            editTextEx:tip_text="@string/regpoint_label3" />
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="@string/regpoint_label4" />
+            <ImageButton
+                android:id="@+id/what_is_shopcode"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@id/textView4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:background="@drawable/selector_questionmark" />
+
+
+        </RelativeLayout>
+
+</LinearLayout>

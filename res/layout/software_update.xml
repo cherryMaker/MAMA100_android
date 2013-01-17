@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:paddingLeft="24dp" android:paddingRight="24dp" xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="18dp" android:layout_marginTop="68dp" android:textColor="@color/btn_text_color" android:text="@string/latest_version"/>
+
+    <TextView
+        android:id="@+id/tv_tips2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@id/tv_title"
+        android:textColor="@color/mama100Orange"
+        android:textSize="20dp" android:layout_marginTop="8dp" android:text="@string/not_latest_version"/>
+
+    <Button
+        android:id="@+id/bt_update"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_tips2"
+        android:text="@string/update_version" android:layout_marginTop="60dp" android:background="@drawable/shape_green" android:textColor="@color/white" android:textSize="16dp" android:padding="10dp"/>
+
+</RelativeLayout>
